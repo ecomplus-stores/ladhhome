@@ -1,26 +1,26 @@
 {
-  "store_id": 51419,
-  "name": "ladhhome",
   "domain": "ladhhome.netlify.app",
-  "short_name": "ladhhome",
-  "description": "ladhhome",
+  "currency_symbol": "R$",
   "primary_color": "#222831",
-  "secondary_color": "#393e46",
-  "bg_color": "#ffffff",
   "theme": {
-    "bootswatch": "_",
-    "custom": "_"
+    "bootswatch": "yeti",
+    "custom": "ecom-beauty"
   },
-  "logo": "/img/uploads/logo.png",
-  "mini_logo": "",
-  "icon": "/img/icon.png",
-  "large_icon": "/img/large-icon.png",
-  "favicon": "/img/uploads/favicon.png",
+  "bg_color": "#ffffff",
+  "repository": "ecomplus-stores/ladhhome",
+  "logo": "/img/uploads/logo-ladhhome3.png",
+  "name": "Ladh Home - Loja de Departamentos",
+  "short_name": "ladhhome",
   "lang": "pt_br",
   "currency": "BRL",
-  "currency_symbol": "R$",
-  "country_code": "BR",
-  "repository": "ecomplus-stores/ladhhome",
+  "mini_logo": "",
+  "font_family": "_",
+  "favicon": "/img/uploads/favicon.png",
   "icons_font": "_",
-  "font_family": "_"
+  "country_code": "BR",
+  "secondary_color": "#393e46",
+  "icon": "/img/icon.png",
+  "store_id": 51419,
+  "description": "ladhhome",
+  "large_icon": "/img/large-icon.png"
 }
