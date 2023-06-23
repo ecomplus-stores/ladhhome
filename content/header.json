@@ -1,8 +1,8 @@
 {
   "marketing_stripe": {
-    "text": "Aproveite nossos descontos de até 30%!",
+    "text": "Receba seu produto no mesmo dia em São Paulo* (consulte regiões)",
     "link": "/promotion",
-    "background": "#0023b5",
+    "background": "#ff0023",
     "color": "#ffffff"
   },
   "contacts_stripe": {
@@ -12,7 +12,7 @@
         "link": "/pages/sobre-nos"
       },
       {
-        "title": "Esta loja é um PWA",
+        "title": "Rastrear seu pedido",
         "link": "/posts/esta-loja-e-um-pwa"
       }
     ],
