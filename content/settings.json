@@ -4,17 +4,17 @@
   "primary_color": "#005ee8",
   "theme": {
     "bootswatch": "_",
-    "custom": "ecom-beauty"
+    "custom": "clean-gray"
   },
   "bg_color": "#e71f1f",
   "repository": "ecomplus-stores/ladhhome",
-  "logo": "/img/uploads/logo-ladhhome-loja-de-departamentos.png",
+  "logo": "/img/uploads/logo-ladhhome-conveniencia.jpg",
   "name": "Ladh Home - Loja de Departamentos",
   "short_name": "ladhhome",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
-  "font_family": "Montserrat",
+  "font_family": "Raleway",
   "favicon": "/img/uploads/favicon.png",
   "icons_font": "_",
   "country_code": "BR",
