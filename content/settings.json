@@ -1,14 +1,14 @@
 {
   "domain": "https://ladhhome.netlify.app/admin/#/collections/settingsladhhome.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#005ee8",
+  "primary_color": "#ff0023",
   "theme": {
     "bootswatch": "_",
     "custom": "clean-gray"
   },
   "bg_color": "#e71f1f",
   "repository": "ecomplus-stores/ladhhome",
-  "logo": "/img/uploads/logo-ladhhome-conveniencia.jpg",
+  "logo": "/img/uploads/logo-ladhhome-loja-de-departamentos.png",
   "name": "Ladh Home - Loja de Departamentos",
   "short_name": "ladhhome",
   "lang": "pt_br",
@@ -18,7 +18,7 @@
   "favicon": "/img/uploads/favicon.png",
   "icons_font": "_",
   "country_code": "BR",
-  "secondary_color": "#420b93",
+  "secondary_color": "#065feb",
   "icon": "/img/icon.png",
   "store_id": 51419,
   "description": "ladhhome",
