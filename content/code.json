@@ -1,5 +1,5 @@
 {
-  "css": "",
+  "css": ".element.style {\n  \n \nbackground: #ff0023;\n  \n \ncolor: #ffffff;\n  font-size: 12px;\n  overflow: hidden;\n  white-space: nowrap;\n  animation: scroll-left 10s linear infinite;\n}\n\n@keyframes scroll-left {\n  0% {\n    transform: translateX(100%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}",
   "html_head": "",
   "html_body": ""
 }
