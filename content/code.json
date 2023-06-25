@@ -1,5 +1,5 @@
 {
-  "css": ".element.style { \nbackground: #ff0023;\ncolor: #ffffff;\ntext-decoration: none;\n}\n.products-carousel .products-carousel__item {\n    background: #fff;\n}\n.collection-shelf {\n    background: #e8e8e8;\n}\n\n",
+  "css": ".element.style { \nbackground: #ff0023;\ncolor: #ffffff;\ntext-decoration: none;\n}\n.products-carousel .products-carousel__item {\n    background: #fff;\n}\n.collection-shelf {\n    background: #e8e8e8;\n}\n\n.pb-lg-4, .py-lg-4 {\n    padding-bottom: 1.5rem;\n    background: #e8e8e8;\n}\n\n",
   "html_head": "",
   "html_body": ""
 }
