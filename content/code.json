@@ -1,5 +1,5 @@
 {
-  "css": ".element.style { \nbackground: #ff0023;\ncolor: #ffffff;\ntext-decoration: none;\n}\n",
-  "html_head": "<!-- Start of CartStack API Script -->\n<script data-cfasync=“false” async=“true” id=“cartstack” src=“https://app.cartstack.com.br/activeAPI/load.js” type=“text/javascript”></script>\n<!-- End of CartStack API Script -->",
-  "html_body": "<!-- Start of CartStack API Script -->\n<script data-cfasync=“false” async=“true” id=“cartstack” src=“https://app.cartstack.com.br/activeAPI/load.js” type=“text/javascript”></script>\n<!-- End of CartStack API Script -->"
+  "css": ".element.style { \nbackground: #ff0023;\ncolor: #ffffff;\ntext-decoration: none;\n}\n.products-carousel .products-carousel__item {\n    background: #fff;\n}",
+  "html_head": "",
+  "html_body": ""
 }
