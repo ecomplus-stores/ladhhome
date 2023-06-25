@@ -5,7 +5,7 @@
     {
       "type": "banner-slider",
       "autoplay": 9000,
-      "full_width": false,
+      "full_width": true,
       "slides": [
         {
           "img": "/img/uploads/rect89.webp",
@@ -16,7 +16,7 @@
           "mobile_img": "/img/uploads/headphone.webp"
         },
         {
-          "start": "",
+          "start": "2023-06-25T11:54:35.691Z",
           "end": "",
           "img": "/img/uploads/banner2.png",
           "alt": "Banner sample two",
