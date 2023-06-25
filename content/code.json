@@ -1,5 +1,5 @@
 {
-  "css": ".element.style { \nbackground: #ff0023;\ncolor: #ffffff;\ntext-decoration: none;\n}\n.products-carousel .products-carousel__item {\n    background: #fff;\n}",
+  "css": ".element.style { \nbackground: #ff0023;\ncolor: #ffffff;\ntext-decoration: none;\n}\n.products-carousel .products-carousel__item {\n    background: #fff;\n}\n#page-home .collection-shelf {\n    background: #e8e8e8;\n}",
   "html_head": "",
   "html_body": ""
 }
