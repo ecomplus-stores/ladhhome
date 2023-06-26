@@ -1,5 +1,5 @@
 {
-  "domain": "https://ladhhome.netlify.app/admin/#/collections/settingsladhhome.netlify.app",
+  "domain": "www.ladhhome.com.br",
   "currency_symbol": "R$",
   "primary_color": "#ff0023",
   "theme": {
@@ -9,7 +9,7 @@
   "bg_color": "#e71f1f",
   "repository": "ecomplus-stores/ladhhome",
   "logo": "/img/uploads/logo-vermelhor-e-preto-ladhhome-para-voce-e-seu-lar-_1_.webp",
-  "name": "Ladh Home - Loja de Departamentos",
+  "name": "Ladh Home - Para você e seu Lar",
   "short_name": "ladhhome",
   "lang": "pt_br",
   "currency": "BRL",
