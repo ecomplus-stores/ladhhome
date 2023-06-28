@@ -4,7 +4,7 @@
   "desktopOnly": false,
   "enableCheckout": true,
   "options": {
-    "gtmContainerId": "<!-- Google Tag Manager (noscript) --> <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-K3C8VBX\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->",
+    "gtmContainerId": "G-83WPBH46BV",
     "dataLayerVar": "dataLayer",
     "partytown": false,
     "isDebug": false
