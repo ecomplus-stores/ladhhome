@@ -1,5 +1,5 @@
 {
-  "css": ".info-bar {\n    background: #343a4000;\n    color: #ff0023;\n    margin-left: auto;\n    margin-right: auto;\n    max-width: var(--content-max-width);\n    width: 100%;\n}\n\n.header__buttons .btn .badge {\n    font-size: .75rem;\n    position: absolute;\n    right: -3px;\n    top: -2px;\n    border-radius: 20px;\n}\n\nmain .top-bar {\n    display: grid;\n    flex-direction: column-reverse;\n}",
-  "html_head": "<meta charset=\"UTF-8\">\n<script src=\"https://cdn.tailwindcss.com\"></script>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css\">\n",
+  "css": "",
+  "html_head": "",
   "html_body": ""
 }
