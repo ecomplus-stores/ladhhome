@@ -4,7 +4,7 @@
   "primary_color": "#ff0023",
   "theme": {
     "bootswatch": "_",
-    "custom": "clean-gray"
+    "custom": "clean-white"
   },
   "bg_color": "#e71f1f",
   "repository": "ecomplus-stores/ladhhome",
