@@ -1,5 +1,5 @@
 {
-  "css": "",
+  "css": "body {\n  font-family: 'Poppins', sans-serif !important;\n}",
   "html_head": "",
   "html_body": ""
 }
