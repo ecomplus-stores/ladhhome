@@ -39,9 +39,21 @@
       "page": 1
     },
     {
-      "type": "page-title",
-      "title": "Ladh Home - Loja de Departamentos ",
-      "description": "Bem-vindo à Ladh Home nossa loja de departamentos online, a melhor opção em varejo e-commerce para satisfazer todas as suas necessidades! Na nossa loja, oferecemos uma ampla variedade de produtos para todos os gostos, desde eletrônicos de última geração a roupas estilosas e decoração de interiores."
+      "type": "offers-timer",
+      "max_hours": 24,
+      "start": "2023-06-29T15:44:44.866Z",
+      "end": "2023-06-29T15:59:00.000Z",
+      "notes": "Promoção da Semana"
+    },
+    {
+      "type": "shelfs-nav",
+      "shuffle": false,
+      "limit": 8,
+      "page": 1,
+      "collection_ids": [
+        "649d64545e606903704ce8e6:categories:Refletores:/refletores"
+      ],
+      "shelfs_title": "Refletores"
     }
   ]
 }
