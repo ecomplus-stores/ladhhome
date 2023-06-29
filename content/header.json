@@ -11,7 +11,11 @@
     "socials": false
   },
   "categories_list": {
-    "featured": [],
+    "featured": [
+      "/energia?Energia",
+      "/tomadas-eletricas?Tomadas Elétricas",
+      "/adaptadores-de-tomadas?Adaptadores de Tomadas"
+    ],
     "random": 6,
     "full_width": true
   },
