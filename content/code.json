@@ -1,5 +1,5 @@
 {
-  "css": "body {\n  font-family: 'Poppins', sans-serif !important;\n}\n\n.product-card__buy.fade {\n  opacity: 1 !important;\n}",
+  "css": "body {\n  font-family: 'Montserrat', sans-serif !important;\n}\n\n.product-card__buy.fade {\n  opacity: 1 !important;\n}",
   "html_head": "",
   "html_body": ""
 }
