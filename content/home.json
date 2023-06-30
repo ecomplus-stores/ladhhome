@@ -29,19 +29,10 @@
       "enabled": true
     },
     {
-      "type": "shelfs-nav",
-      "shuffle": false,
-      "limit": 8,
-      "page": 1,
-      "collection_ids": [
-        "649dea265e606903704de139:categories:Cozinha:/cozinha",
-        "649dea4d5e606903704de190:categories:Kit Churrasco:/kit-churrasco",
-        "649deaa15e606903704de224:categories:Canecas:/canecas",
-        "649dea845e606903704de1ea:categories:Taças:/tacas",
-        "649ecbd95e606903704ec542:categories:Utensílios de Preparação:/utensilios-de-preparacao"
-      ],
-      "sort": "views",
-      "shelfs_title": "Para sua cozinha"
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1
     }
   ]
 }
