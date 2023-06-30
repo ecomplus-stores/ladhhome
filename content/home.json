@@ -31,29 +31,12 @@
     {
       "type": "collection-shelf",
       "shuffle": true,
-      "collection_id": "649c40cb5e606903704bdd8a:categories:Energia:/energia",
-      "sort": "offers",
-      "title": "",
+      "collection_id": "649dea265e606903704de139:categories:Cozinha:/cozinha",
+      "sort": "views",
+      "title": "Para sua cozinha",
       "headless": false,
       "limit": 12,
       "page": 1
-    },
-    {
-      "type": "offers-timer",
-      "max_hours": 24,
-      "start": "2023-06-29T15:44:44.866Z",
-      "end": "2023-06-29T15:59:00.000Z",
-      "notes": "Promoção da Semana"
-    },
-    {
-      "type": "shelfs-nav",
-      "shuffle": false,
-      "limit": 8,
-      "page": 1,
-      "collection_ids": [
-        "649d64545e606903704ce8e6:categories:Refletores:/refletores"
-      ],
-      "shelfs_title": "Refletores"
     }
   ]
 }
