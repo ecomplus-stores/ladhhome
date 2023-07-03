@@ -1,5 +1,5 @@
 {
-  "css": ".info-bar {\n  background: url(https://community.e-com.plus/uploads/default/optimized/2X/6/6988a07cb3ee34233d9eaff5f36991db73a5e476_2_1035x87.png) !important;\n  background-repeat: no-repeat;\n  background-size: cover !important;;\n}\n\nbody {\n  font-family: 'Roboto', sans-serif !important;\n}\n\n.product-card__buy.fade {\n  opacity: 1 !important;\n}\n\n\n.btn-primary {\n    background-color: #339b1a;\n    border-color: #ffffff00;\n    color: var(--primary-yiq);\n}",
+  "css": ".info-bar {\n    background-color: red !important;\n}\n\nbody {\n  font-family: 'Roboto', sans-serif !important;\n}\n\n.product-card__buy.fade {\n  opacity: 1 !important;\n}\n\n\n.btn-primary {\n    background-color: #339b1a;\n    border-color: #ffffff00;\n    color: var(--primary-yiq);\n}",
   "html_head": "",
   "html_body": ""
 }
