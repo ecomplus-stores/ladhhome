@@ -1,5 +1,5 @@
 {
-  "css": "body {\n  font-family: 'Montserrat', sans-serif !important;\n}\n\n.product-card__buy.fade {\n  opacity: 1 !important;\n}\n\n<!-- Cor de fundo informacoes -- >\n\n\n\n.info-bar {\n    background: #ffffff00;\n    color: #000;\n    margin-left: auto;\n    margin-right: auto;\n    max-width: var(--content-max-width);\n    width: 100%;\n}\n\n.btn-primary {\n    background-color: #339b1a;\n    border-color: #ffffff00;\n    color: var(--primary-yiq);\n}",
+  "css": "body {\n  font-family: 'Montserrat', sans-serif !important;\n}\n\n.product-card__buy.fade {\n  opacity: 1 !important;\n}\n\n<!-- Cor de fundo informacoes -- >\n\n\n\n.info-bar {\n    background: #ffffff00;\n    color: #fff;\n    margin-left: auto;\n    margin-right: auto;\n    max-width: var(--content-max-width);\n    width: 100%;\n}\n\n.btn-primary {\n    background-color: #339b1a;\n    border-color: #ffffff00;\n    color: var(--primary-yiq);\n}",
   "html_head": "",
   "html_body": ""
 }
