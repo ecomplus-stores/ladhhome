@@ -1,18 +1,22 @@
 {
   "shipping": {
     "show": true,
-    "text": "Entregamos para todo o Brasil"
+    "text": "Receba no mesmo dia",
+    "title": "Envios Rápidos"
   },
   "installments": {
     "show": true,
-    "text": "Parcele sem juros"
+    "text": "em até 12x",
+    "title": "Pagamentos"
   },
   "exchange": {
     "show": true,
-    "text": "Não gostou? A primeira troca é gratuita"
+    "text": "Não gostou? A primeira troca é gratuita",
+    "title": "Garantia"
   },
   "promo": {
     "show": true,
-    "text": "Diferentes promoções ao longo do ano!"
+    "text": "10% no Pix",
+    "title": "Descontos"
   }
 }
