@@ -1,10 +1,6 @@
 {
   "sections": [
     {
-      "type": "breadcrumbs",
-      "enabled": true
-    },
-    {
       "type": "banner-slider",
       "autoplay": 9000,
       "full_width": true,
@@ -15,6 +11,10 @@
           "img": "/img/uploads/frete-no-mesmo-dia-em-sao-paulo.png"
         }
       ]
+    },
+    {
+      "type": "breadcrumbs",
+      "enabled": true
     },
     {
       "type": "product-block",
