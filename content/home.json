@@ -8,19 +8,19 @@
       "full_width": true,
       "slides": [
         {
+          "start": "2023-06-25T11:54:35.691Z",
+          "end": "",
+          "img": "/img/uploads/frete-gratis-no-mesmo-dia-em-sao-paulo-pra-hoje.png",
+          "alt": "Banner sample two",
+          "mobile_img": ""
+        },
+        {
           "img": "/img/uploads/frete-no-mesmo-dia-em-sao-paulo-ladhhome.webp",
           "link": "/ofertas",
           "alt": "Ofertas do site",
           "start": "2020-04-11T05:54:06.750Z",
           "end": "2029-12-31T03:00:00.000Z",
           "mobile_img": "/img/uploads/headphone.webp"
-        },
-        {
-          "start": "2023-06-25T11:54:35.691Z",
-          "end": "",
-          "img": "/img/uploads/banner2-_1_.webp",
-          "alt": "Banner sample two",
-          "mobile_img": ""
         }
       ]
     },
