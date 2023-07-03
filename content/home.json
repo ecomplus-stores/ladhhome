@@ -54,6 +54,14 @@
       "page": 1,
       "sort": "news",
       "title": "Novidades"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "sort": "offers",
+      "title": "Ofertas"
     }
   ]
 }
