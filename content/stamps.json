@@ -1,3 +1,13 @@
 {
-  "stamps_list": []
+  "stamps_list": [
+    {
+      "id": "frete",
+      "img": "/img/uploads/caixa-de-entrega-gratis.png",
+      "skus": [
+        "CCHP360",
+        "CM12-P",
+        "CM36"
+      ]
+    }
+  ]
 }
