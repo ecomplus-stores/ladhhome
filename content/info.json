@@ -1,22 +1,22 @@
 {
   "shipping": {
     "show": true,
-    "text": "Em mais de 500 Lojas",
-    "title": "Retire"
+    "text": "Compre e receba hoje em SP",
+    "title": "RECEBA HOJE"
   },
   "installments": {
     "show": true,
-    "text": "Em até 12x",
-    "title": "Pagamentos"
+    "text": "Em até 3x no cartão",
+    "title": "PARCELE SEM JUROS"
   },
   "exchange": {
     "show": true,
-    "text": "Compre com Garantia",
-    "title": "Trocas"
+    "text": "Compre com garantia",
+    "title": "TROCAS FACILITADAS"
   },
   "promo": {
     "show": true,
-    "text": "10% via Pix",
-    "title": "Descontos"
+    "text": "Aprovação imediata!",
+    "title": "PAGUE COM PIX"
   }
 }
