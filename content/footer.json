@@ -26,6 +26,9 @@
       "alt": "Secure connection",
       "width": 150,
       "height": 62
+    },
+    {
+      "src": "/img/uploads/letsencrypt-socialshare.png"
     }
   ],
   "payment_methods": {
