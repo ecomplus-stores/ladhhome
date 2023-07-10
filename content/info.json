@@ -1,22 +1,22 @@
 {
   "shipping": {
     "show": true,
-    "text": "Receba no mesmo dia",
-    "title": "Envios Rápidos"
+    "text": "Em mais de 500 Lojas",
+    "title": "Retire"
   },
   "installments": {
     "show": true,
-    "text": "em até 12x",
+    "text": "Em até 12x",
     "title": "Pagamentos"
   },
   "exchange": {
     "show": true,
-    "text": "Não gostou? A primeira troca é gratuita",
-    "title": ""
+    "text": "Compre com Garantia",
+    "title": "Trocas"
   },
   "promo": {
     "show": true,
-    "text": "10% no Pix",
+    "text": "10% via Pix",
     "title": "Descontos"
   }
 }
