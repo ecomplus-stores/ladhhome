@@ -1,7 +1,7 @@
 {
   "marketing_stripe": {
     "text": "Receba seu produto no mesmo dia em São Paulo* (consulte regiões)",
-    "link": "/promotion",
+    "link": "/pages/entregas-no-mesmo-dia",
     "background": "#7e7e7e",
     "color": "#ffffff"
   },
