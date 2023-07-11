@@ -1,9 +1,3 @@
 {
-  "stamps_list": [
-    {
-      "id": "frete",
-      "img": "/img/uploads/caixa-de-entrega-gratis.png",
-      "skus": null
-    }
-  ]
+  "stamps_list": []
 }
