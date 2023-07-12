@@ -102,7 +102,7 @@ var horaAtual = dataAtual.getHours();
 var minutoAtual = dataAtual.getMinutes();
 
 // Se a hora atual for maior que 12 ou se a hora for igual a 12 e os minutos forem maiores ou iguais a 40, oculta a mensagem
-if (horaAtual > 12 || (horaAtual === 20 && minutoAtual >= 40)) {
+if (horaAtual > 12 || (horaAtual === 12 && minutoAtual >= 35)) {
     document.getElementById('mensagem').style.display = 'none';
 }
 </script>
