@@ -94,16 +94,27 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           </p>
 
 <!-- Teste de Chegara hoje -->
-          <p id="mensagem">Chega Hoje</p>
+<p id="mensagem">Chega Hoje</p>
+<p id="tempoRestante"></p>
 <script>
-// Obtém a hora e minuto atuais
-var dataAtual = new Date();
-var horaAtual = dataAtual.getHours();
-var minutoAtual = dataAtual.getMinutes();
+// Define a hora de término (13:30)
+var horaTermino = new Date();
+horaTermino.setHours(13, 30, 0, 0);
 
-// Se a hora atual for maior que 12 ou se a hora for igual a 12 e os minutos forem maiores ou iguais a 40, oculta a mensagem
-if (horaAtual > 12 || (horaAtual === 12 && minutoAtual >= 35)) {
+// Obtém a hora atual
+var agora = new Date();
+
+// Calcula a diferença em horas e minutos
+var diferenca = horaTermino - agora;
+var horas = Math.floor(diferenca / 1000 / 60 / 60);
+var minutos = Math.floor((diferenca / 1000 / 60) % 60);
+
+// Exibe o tempo restante ou oculta a mensagem se o tempo terminou
+if (diferenca > 0) {
+    document.getElementById('tempoRestante').textContent = "Comprando dentro da próxima " + horas + " h " + minutos + " min";
+} else {
     document.getElementById('mensagem').style.display = 'none';
+    document.getElementById('tempoRestante').style.display = 'none';
 }
 </script>
 <!-- Teste de Chegara hoje -->
