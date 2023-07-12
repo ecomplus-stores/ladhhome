@@ -94,13 +94,16 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           </p>
 
 <!-- Teste de Chegara hoje -->
-          <p id="message">Chega Hoje</p>
-          <script>
-          <!-- Obtém a hora atual -->
-          var currentHour = new Date().getHours();
-          <!-- Se a hora atual for maior que 13, oculta a mensagem -->
-          if (currentHour >= 11:59) {
-    document.getElementById('message').style.display = 'none';
+          <p id="mensagem">Chega Hoje</p>
+<script>
+// Obtém a hora e minuto atuais
+var dataAtual = new Date();
+var horaAtual = dataAtual.getHours();
+var minutoAtual = dataAtual.getMinutes();
+
+// Se a hora atual for maior que 12 ou se a hora for igual a 12 e os minutos forem maiores ou iguais a 40, oculta a mensagem
+if (horaAtual > 12 || (horaAtual === 20 && minutoAtual >= 40)) {
+    document.getElementById('mensagem').style.display = 'none';
 }
 </script>
 <!-- Teste de Chegara hoje -->
