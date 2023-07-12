@@ -111,7 +111,7 @@ var minutos = Math.floor((diferenca / 1000 / 60) % 60);
 
 // Exibe o tempo restante ou oculta a mensagem se o tempo terminou
 if (diferenca > 0) {
-    document.getElementById('tempoRestante').textContent = "Comprando dentro da próxima " + horas + " h " + minutos + " min";
+    document.getElementById('tempoRestante').textContent = "Comprando dentro da próxima <span style='color: red;'>" + horas + " h " + minutos + " min</span>";
 } else {
     document.getElementById('mensagem').style.display = 'none';
     document.getElementById('tempoRestante').style.display = 'none';
