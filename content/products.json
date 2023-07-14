@@ -8,9 +8,10 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/topo-informacoes-chegarahoje-13hora.png",
+          "img": "/img/uploads/receba-hoje-banner-detalhes-produtos.jpg",
           "link": "/pages/entregas-no-mesmo-dia",
-          "alt": "Chegará hoje Ladh Home"
+          "alt": "Chegará hoje Ladh Home",
+          "mobile_img": "/img/uploads/receba-hoje-banner-detalhes-produtos-mobile.jpg"
         }
       ]
     },
