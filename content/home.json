@@ -45,9 +45,15 @@
       "title": "Mais Vendidos"
     },
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/frete-gratis-no-mesmo-dia-em-sao-paulo.png",
-      "alt": "Receba seu produto no mesmo dia em São Paulo - Ladh Home para você e seu Lar"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/testebanner1.png"
+        },
+        {
+          "img": "/img/uploads/testebanner2.png"
+        }
+      ]
     },
     {
       "type": "collection-shelf",
