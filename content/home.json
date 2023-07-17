@@ -8,19 +8,19 @@
       "full_width": true,
       "slides": [
         {
-          "start": "2023-06-25T11:54:35.691Z",
-          "end": "",
-          "img": "/img/uploads/banner-comprou-chegou.png",
-          "alt": "Banner Frete no mesmo dia em São Paulo",
-          "mobile_img": "/img/uploads/frete-gratis-no-mesmo-dia-em-sp.jpg"
-        },
-        {
           "img": "/img/uploads/banner-no-mesmo-dia-chegou.png",
           "link": "/ofertas",
           "alt": "Ofertas do site",
           "start": "2020-04-11T05:54:06.750Z",
           "end": "2029-12-31T03:00:00.000Z",
           "mobile_img": "/img/uploads/frete-gratis-no-mesmo-dia.jpg"
+        },
+        {
+          "start": "2023-06-25T11:54:35.691Z",
+          "end": "",
+          "img": "/img/uploads/banner-comprou-chegou.png",
+          "alt": "Banner Frete no mesmo dia em São Paulo",
+          "mobile_img": "/img/uploads/frete-gratis-no-mesmo-dia-em-sp.jpg"
         }
       ]
     },
