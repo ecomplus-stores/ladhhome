@@ -204,68 +204,41 @@ const isCentralizedLogo = header.centralized_logo
         </div>
       </div>
 
-
-
-
-<!-- TESTE -->
       <% if (header.search_input) {
-  const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
-%>
-<div
-  class="d-none d-lg-block col-12 col-lg<%= searchColSize %> collapse show"
-  id="search-bar"
->
-  <form
-    class="header__search mt-2 mt-md-3 mt-lg-0"
-    id="search-form"
-    action="/search"
-    method="get"
-  >
-    <input
-      type="search"
-      name="term"
-      id="search-input"
-      placeholder="<%= _.dictionary('searchProducts') %>"
-      aria-label="<%= _.dictionary('searchProducts') %>"
-      class="header__search-input form-control"
-    >
-    <button
-      type="button"
-      class="header__search-btn"
-      id="search-btn"
-      aria-label="<%= _.dictionary('searchProducts') %>"
-    >
-      <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/microphone.png" alt="microphone">
-    </button>
-    <div id="instant-search">
-      <!--
-        `InstantSearch` should be open on input focus:
-        https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
-      -->
-    </div>
-  </form>
-</div>
-<% } %>
-
-<script>
-document.getElementById('search-btn').addEventListener('click', function() {
-  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  var recognition = new SpeechRecognition();
-  
-  recognition.start();
-  
-  recognition.onresult = function(event) {
-    var transcript = event.results[0][0].transcript;
-    document.getElementById('search-input').value = transcript;
-    document.getElementById('search-form').submit();
-  };
-});
-</script>
-
-<!-- TESTE -->
-
-
-
+        const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
+        %>
+        <div
+          class="d-none d-lg-block col-12 col-lg<%= searchColSize %> collapse show"
+          id="search-bar"
+        >
+          <form
+            class="header__search mt-2 mt-md-3 mt-lg-0"
+            id="search-form"
+            action="/search"
+            method="get"
+          >
+            <input
+              type="search"
+              name="term"
+              placeholder="<%= _.dictionary('searchProducts') %>"
+              aria-label="<%= _.dictionary('searchProducts') %>"
+              class="header__search-input form-control"
+              id="search-input"
+            >
+            <button
+              type="submit"
+              class="header__search-btn"
+              aria-label="<%= _.dictionary('searchProducts') %>"
+            >
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/microphone.png" alt="microphone">
+            </button>
+            <div id="instant-search">
+              <!--
+                `InstantSearch` should be open on input focus:
+                https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+              -->
+            </div>
+          </form>
 
           <% if (_.settings.domain) { %>
             <script type="application/ld+json"><%-
