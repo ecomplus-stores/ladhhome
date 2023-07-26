@@ -11,8 +11,10 @@
     "socials": false
   },
   "categories_list": {
-    "featured": [],
-    "random": 11,
+    "featured": [
+      "/casa-e-construcao?Casa e Construção"
+    ],
+    "random": 10,
     "full_width": true
   },
   "centralized_logo": false,
