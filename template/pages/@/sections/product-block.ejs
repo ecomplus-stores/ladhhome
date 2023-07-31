@@ -94,30 +94,39 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           </p>
 
 <!-- Teste de Chegara hoje -->
-<p class="chegahoje" id="mensagem"><span><i class="material-symbols-outlined">deployed_code_history</i> Chegará <strong>Hoje</strong></p>
-<p class="chegahojep" id="tempoRestante"></p>
-<script>
-// Define a hora de término (12:59)
-var horaTermino = new Date();
-horaTermino.setHours(12, 55, 0, 0);
+  <p class="chegahoje" id="mensagem"><span><i class="material-symbols-outlined">deployed_code_history</i> Chegará <strong>Hoje</strong></span></p>
+  <p class="chegahojep" id="tempoRestante"></p>
+  <div class="progressbar">
+    <div class="progress" id="progressBar"></div>
+  </div>
+  <script>
+    // Define a hora de término (12:59)
+    var horaTermino = new Date();
+    horaTermino.setHours(12, 55, 0, 0);
 
-// Obtém a hora atual
-var agora = new Date();
+    // Obtém a hora atual
+    var agora = new Date();
 
-// Calcula a diferença em horas e minutos
-var diferenca = horaTermino - agora;
-var horas = Math.floor(diferenca / 1000 / 60 / 60);
-var minutos = Math.floor((diferenca / 1000 / 60) % 60);
+    // Calcula a diferença em horas e minutos
+    var diferenca = horaTermino - agora;
+    var horas = Math.floor(diferenca / 1000 / 60 / 60);
+    var minutos = Math.floor((diferenca / 1000 / 60) % 60);
 
-// Exibe o tempo restante ou oculta a mensagem se o tempo terminou
-if (diferenca > 0) {
-    document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
-} else {
-    document.getElementById('mensagem').style.display = 'none';
-    document.getElementById('tempoRestante').style.display = 'none';
-}
-</script>
-<!-- Teste de Chegara hoje -->
+    // Exibe o tempo restante ou oculta a mensagem se o tempo terminou
+    if (diferenca > 0) {
+      document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
+      
+      // Calcula o progresso
+      var totalMinutos = horas * 60 + minutos;
+      var percentualConcluido = ((horaTermino - agora) / (horaTermino - new Date(horaTermino).setHours(12, 0, 0, 0))) * 100;
+      document.getElementById('progressBar').style.width = percentualConcluido + '%';
+    } else {
+      document.getElementById('mensagem').style.display = 'none';
+      document.getElementById('tempoRestante').style.display = 'none';
+      document.getElementById('progressBar').style.display = 'none';
+    }
+  </script>
+  <!-- Teste de Chegara hoje -->
 
 
           <div id="product-actions">
