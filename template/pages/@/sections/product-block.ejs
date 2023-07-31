@@ -93,7 +93,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
             COD: <%= _.state.sku %>
           </p>
 
-<!-- Teste de Chegara hoje -->
+  <!-- Teste de Chegara hoje -->
   <p class="chegahoje" id="mensagem"><span><i class="material-symbols-outlined">deployed_code_history</i> Chegará <strong>Hoje</strong></span></p>
   <p class="chegahojep" id="tempoRestante"></p>
   <div class="progressbar">
@@ -119,7 +119,14 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
       // Calcula o progresso
       var totalMinutos = horas * 60 + minutos;
       var percentualConcluido = ((horaTermino - agora) / (horaTermino - new Date(horaTermino).setHours(12, 0, 0, 0))) * 100;
-      document.getElementById('progressBar').style.width = percentualConcluido + '%';
+      
+      // Animação da barra de progresso
+      var progressBar = document.getElementById('progressBar');
+      progressBar.style.width = '0';
+      progressBar.style.transition = 'width 1s linear';
+      setTimeout(function () {
+        progressBar.style.width = percentualConcluido + '%';
+      }, 100);
     } else {
       document.getElementById('mensagem').style.display = 'none';
       document.getElementById('tempoRestante').style.display = 'none';
