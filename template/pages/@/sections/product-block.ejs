@@ -122,7 +122,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
       
       // Animação da barra de progresso
       var progressBar = document.getElementById('progressBar');
-      progressBar.style.width = '0';
+      progressBar.style.width = '100%';
       progressBar.style.transition = 'width 1s linear';
       setTimeout(function () {
         progressBar.style.width = percentualConcluido + '%';
