@@ -57,17 +57,13 @@ const isCentralizedLogo = header.centralized_logo
   <% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
       <% if (header.marketing_stripe.link) { %>
-        <a
-          class="top-bar__countdown"
-          style="<%= marketingStripeStyle %>"
-          href="<%= header.marketing_stripe.link %>"
-        >
-          <%= header.marketing_stripe.text %>
-        </a>
+      
+
+<img src="/img/uploads/banner-desconto-topo-novo.gif" alt="Cupom Primeira10">
+
+
       <% } else { %>
-        <div class="top-bar__countdown" style="<%= marketingStripeStyle %>">
-          <%= header.marketing_stripe.text %>
-        </div>
+       
       <% } %>
     <% } %>
   <% } %>
