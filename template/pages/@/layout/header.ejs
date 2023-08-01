@@ -57,17 +57,68 @@ const isCentralizedLogo = header.centralized_logo
   <% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
       <% if (header.marketing_stripe.link) { %>
-      
-
-<img src="/img/uploads/banner-desconto-topo-novo.gif" alt="Cupom Primeira10">
-
-
+        <a
+          class="top-bar__countdown"
+          style="<%= marketingStripeStyle %>"
+          href="<%= header.marketing_stripe.link %>"
+        >
+          <%= header.marketing_stripe.text %>
+        </a>
       <% } else { %>
-       
+        <div class="top-bar__countdown" style="<%= marketingStripeStyle %>">
+          <%= header.marketing_stripe.text %>
+        </div>
       <% } %>
     <% } %>
   <% } %>
 
+  <div class="top-bar__nav d-none d-md-block">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex">
+          <nav class="top-bar__page-links">
+            <% if (header.contacts_stripe.pages) { %>
+              <div class="<%= (themeCustom === 'ecom-beauty' && isCategoriesNavFull) ? 'd-lg-none' : '' %>">
+                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
+                  <a href="<%= link %>"><%= title %></a>
+                <% }) %>
+              </div>
+            <% } %>
+          </nav>
+          <% if (header.contacts_stripe.phone_wpp) { %>
+            <div class="top-bar__contacts-container">
+              <% if (contacts.whatsapp) { %>
+                <a href="javascript:;" target="_blank" rel="noopener" class="whatsapp-link"
+                  data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>">
+                  <i class="i-whatsapp"></i>
+                  <%= contacts.whatsapp %>
+                </a>
+                <% } %>
+              <% if (contacts.phone) { %>
+                <a href="tel:+<%= contacts.phone.replace(/\D/g, '') %>" target="_blank" rel="noopener">
+                  <i class="i-phone"></i>
+                  <%= contacts.phone %>
+                </a>
+              <% } %>
+            </div>
+            
+          <% } %>
+        </div>
+        <% if (header.contacts_stripe.socials) { %>
+          <div class="col-auto">
+            <% networks.forEach(network => { %>
+              <% if (contacts[network]) { %>
+                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                  <i class="i-<%= network %>"></i>
+                </a>
+              <% } %>
+            <% }) %>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
 
 <header class="header" id="header">
   <div class="header__container container-fluid">
