@@ -96,7 +96,18 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 <!-- Teste de Chegara hoje -->
 <p class="chegahoje" id="mensagem"><span><i class="material-symbols-outlined">deployed_code_history</i> Chegará <strong id="horarioChegada">Hoje</strong></p>
 <p class="chegahojep" id="tempoRestante"></p>
-<!-- Teste de Chegara hoje -->
+
+
+<style>
+/* Estilo para quando "Amanhã" estiver ativo */
+#horarioChegada.amanha {
+  /* Adicione os estilos que você desejar para o texto "Chegará amanhã" */
+  font-weight: bold; /* Exemplo: Texto em negrito */
+  color: #ff0000; /* Exemplo: Cor vermelha */
+  font-size: 20px; /* Exemplo: Tamanho da fonte de 20 pixels */
+  /* Adicione outros estilos que desejar */
+}
+</style>
 
 <script>
 // Define a hora de término (12:59)
@@ -117,14 +128,12 @@ if (diferenca > 0) {
 } else {
     // Caso o tempo tenha terminado, exibe "Chegará amanhã"
     document.getElementById('horarioChegada').innerHTML = "Amanhã";
-    document.getElementById('horarioChegada').style.fontWeight = 'bold';
-    document.getElementById('horarioChegada').style.color = '#ff0000';
-    document.getElementById('horarioChegada').style.fontSize = '20px';
+    document.getElementById('horarioChegada').classList.add('amanha'); // Adiciona a classe "amanha"
     document.getElementById('mensagem').style.display = 'none'; // Esconde a mensagem "Hoje"
     document.getElementById('tempoRestante').style.display = 'none';
 }
 </script>
-
+<!-- Teste de Chegara hoje -->
 
           <div id="product-actions">
             <div id="product-loading">
