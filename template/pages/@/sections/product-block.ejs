@@ -130,12 +130,26 @@ var minutos = Math.floor((diferenca / 1000 / 60) % 60);
 if (diferenca > 0) {
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
 } else {
-    // Caso o tempo tenha terminado, exibe "Chegará amanhã"
-    document.getElementById('horarioChegada').innerHTML = "Amanhã";
-    document.getElementById('horarioChegada').style.color = '#ff6615'; // Aplica a cor laranja para o texto "Amanhã"
+    // Caso o tempo tenha terminado, exibe "Chegará amanhã comprando até 12:55"
+    var dataLimite = new Date();
+    dataLimite.setDate(dataLimite.getDate() + 1); // Adiciona 1 dia à data atual para obter a data de amanhã
+    dataLimite.setHours(12, 55, 0, 0);
+
+    var diferencaAmanha = dataLimite - agora;
+    var horasAmanha = Math.floor(diferencaAmanha / 1000 / 60 / 60);
+    var minutosAmanha = Math.floor((diferencaAmanha / 1000 / 60) % 60);
+
+    document.getElementById('horarioChegada').innerHTML = "Chegará amanhã comprando até " + formatarHora(horasAmanha, minutosAmanha);
+    document.getElementById('horarioChegada').style.color = '#ff6615'; // Aplica a cor laranja para o texto "Chegará amanhã comprando até 12:55"
     document.getElementById('tempoRestante').style.display = 'none';
     document.querySelector('.chegahoje').style.backgroundColor = 'blue'; // Altera a cor de fundo para azul
     document.querySelector('.chegahoje').style.color = '#ff6615'; // Altera a cor do texto para laranja
+}
+
+function formatarHora(horas, minutos) {
+    var horaFormatada = horas.toString().padStart(2, '0');
+    var minutosFormatados = minutos.toString().padStart(2, '0');
+    return horaFormatada + ':' + minutosFormatados;
 }
 </script>
 <!-- Teste de Chegará hoje -->
