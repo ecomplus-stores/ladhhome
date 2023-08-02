@@ -131,7 +131,7 @@ if (diferenca > 0) {
     var horasAmanha = Math.floor(diferencaAmanha / 1000 / 60 / 60);
     var minutosAmanha = Math.floor((diferencaAmanha / 1000 / 60) % 60);
 
-    document.getElementById('horarioChegada').innerText = "Amanhã dentro das próximas " + formatarHora(horasAmanha, minutosAmanha);
+    document.getElementById('horarioChegada').innerText = "Amanhã";
     document.querySelector('.chegahoje').classList.add('ativo');
     document.getElementById('tempoRestante').style.display = 'none';
 }
