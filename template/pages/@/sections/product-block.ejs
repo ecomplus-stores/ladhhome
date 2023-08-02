@@ -126,7 +126,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 
 <p class="chegahoje" id="mensagem">
   <span><i class="material-symbols-outlined">deployed_code_history</i> Chegará 
-    <strong id="horarioChegada" style="display: inline-block; color: #fff;"> amanhã comprando até <span id="horarioChegadaHora"></span></strong>
+    <strong id="horarioChegada" style="display: inline-block; color: #fff;"></strong>
   </span>
 </p>
 <p class="chegahojep" id="tempoRestante">h</p>
@@ -146,6 +146,8 @@ var minutos = Math.floor((diferenca / 1000 / 60) % 60);
 
 // Verifica se o tempo ainda não terminou
 if (diferenca > 0) {
+    // Exibe "Chegará hoje" se o tempo ainda não tiver terminado
+    document.getElementById('horarioChegada').innerText = "Hoje";
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
 } else {
     // Caso o tempo tenha terminado, exibe "Chegará amanhã comprando até 12:55"
@@ -157,7 +159,7 @@ if (diferenca > 0) {
     var horasAmanha = Math.floor(diferencaAmanha / 1000 / 60 / 60);
     var minutosAmanha = Math.floor((diferencaAmanha / 1000 / 60) % 60);
 
-    document.getElementById('horarioChegadaHora').innerText = formatarHora(horasAmanha, minutosAmanha);
+    document.getElementById('horarioChegada').innerText = "Amanhã comprando até " + formatarHora(horasAmanha, minutosAmanha);
     document.querySelector('.chegahoje').classList.add('ativo');
     document.getElementById('tempoRestante').style.display = 'none';
 }
