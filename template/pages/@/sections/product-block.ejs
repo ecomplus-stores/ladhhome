@@ -100,17 +100,27 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
     font-size: 18px;
     line-height: 1.3;
     margin-bottom: -6px;
-    color: #155724;
-    background-color: #d4edda;
+    color: black; /* Alteramos a cor das letras para preto */
+    background-color: #d4d4d4; /* Alteramos o fundo para cinza */
     font-weight: bold;
     width: 57%;
     padding-left: 10px;
     padding-top: 10px;
     border-radius: 10px 10px 0px 0px;
 }
+
+/* Estilo para quando Chegará Amanhã estiver ativo */
+.chegahoje.ativo {
+    color: #ff6615;
+    background-color: #d4d4d4;
+}
 </style>
 
-<p class="chegahoje" id="mensagem"><span><i class="material-symbols-outlined">deployed_code_history</i> Chegará <strong id="horarioChegada">Hoje</strong></span></p>
+<p class="chegahoje" id="mensagem">
+  <span><i class="material-symbols-outlined">deployed_code_history</i> Chegará 
+    <strong id="horarioChegada" style="display: inline-block; color: #ff6615;">amanhã comprando até <span id="horarioChegadaHora"></span></strong>
+  </span>
+</p>
 <p class="chegahojep" id="tempoRestante"></p>
 
 <script>
@@ -139,11 +149,9 @@ if (diferenca > 0) {
     var horasAmanha = Math.floor(diferencaAmanha / 1000 / 60 / 60);
     var minutosAmanha = Math.floor((diferencaAmanha / 1000 / 60) % 60);
 
-    document.getElementById('horarioChegada').innerHTML = "Chegará amanhã comprando até " + formatarHora(horasAmanha, minutosAmanha);
-    document.getElementById('horarioChegada').style.color = '#ff6615'; // Aplica a cor laranja para o texto "Chegará amanhã comprando até 12:55"
+    document.getElementById('horarioChegadaHora').innerText = formatarHora(horasAmanha, minutosAmanha);
+    document.querySelector('.chegahoje').classList.add('ativo');
     document.getElementById('tempoRestante').style.display = 'none';
-    document.querySelector('.chegahoje').style.backgroundColor = 'blue'; // Altera a cor de fundo para azul
-    document.querySelector('.chegahoje').style.color = '#ff6615'; // Altera a cor do texto para laranja
 }
 
 function formatarHora(horas, minutos) {
