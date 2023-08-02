@@ -113,22 +113,26 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 .chegahoje.ativo {
     color: #ffffff;
     background-color: #000000;
-    max-width: 57%;
+    max-width: 100%; /* Alteramos a largura máxima para ocupar toda a largura disponível */
     font-size: 16px;
     padding-bottom: 8px;
     border-radius: 0px 25px 0px 25px;
+}
+
+#horarioChegadaHora {
+    font-weight: bold; /* Deixamos a hora em negrito */
 }
 </style>
 
 <p class="chegahoje" id="mensagem">
   <span><i class="material-symbols-outlined">deployed_code_history</i> Chegará 
-    <strong id="horarioChegada" style="display: inline-block; color: #fff;">Amanhã comprando até <span id="horarioChegadaHora"></span></strong>
+    <strong id="horarioChegada" style="display: inline-block; color: #fff;"> amanhã comprando até <span id="horarioChegadaHora"></span></strong>
   </span>
 </p>
 <p class="chegahojep" id="tempoRestante">h</p>
 
 <script>
-// Define a hora de término (12:59)
+// Define a hora de término (12:55)
 var horaTermino = new Date();
 horaTermino.setHours(12, 55, 0, 0);
 
@@ -163,7 +167,7 @@ function formatarHora(horas, minutos) {
     var minutosFormatados = minutos.toString().padStart(2, '0');
     return horaFormatada + ':' + minutosFormatados;
 }
-</script></br>
+</script>
 <!-- Teste de Chegará hoje -->
 
 
