@@ -111,18 +111,32 @@ horaTermino.setHours(12, 55, 0, 0);
 // Obtém a hora atual
 var agora = new Date();
 
+// Função para obter o nome do dia da semana
+function getNomeDiaSemana(diaSemana) {
+    const diasSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+    return diasSemana[diaSemana];
+}
+
+// Função para verificar se é domingo
+function isDomingo(diaSemana) {
+    return diaSemana === 0; // 0 representa domingo
+}
+
 // Calcula a diferença em horas e minutos
 var diferenca = horaTermino - agora;
 var horas = Math.floor(diferenca / 1000 / 60 / 60);
 var minutos = Math.floor((diferenca / 1000 / 60) % 60);
 
+// Obtém o dia da semana atual
+var diaSemanaAtual = agora.getDay();
+
 // Verifica se o tempo ainda não terminou
-if (diferenca > 0) {
-    // Exibe "Chegará hoje" se o tempo ainda não tiver terminado
+if (diferenca > 0 && !isDomingo(diaSemanaAtual)) {
+    // Exibe "Chegará hoje" se o tempo ainda não tiver terminado e não for domingo
     document.getElementById('horarioChegada').innerText = "Hoje";
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
 } else {
-    // Caso o tempo tenha terminado, exibe "Chegará amanhã comprando até 12:55"
+    // Caso o tempo tenha terminado ou seja domingo, exibe "Chegará amanhã comprando até 12:55"
     var dataLimite = new Date();
     dataLimite.setDate(dataLimite.getDate() + 1); // Adiciona 1 dia à data atual para obter a data de amanhã
     dataLimite.setHours(12, 55, 0, 0);
@@ -131,9 +145,18 @@ if (diferenca > 0) {
     var horasAmanha = Math.floor(diferencaAmanha / 1000 / 60 / 60);
     var minutosAmanha = Math.floor((diferencaAmanha / 1000 / 60) % 60);
 
+    // Obtém o dia da semana de amanhã
+    var diaSemanaAmanha = dataLimite.getDay();
+
     document.getElementById('horarioChegada').innerText = "Amanhã";
     document.querySelector('.chegahoje').classList.add('ativo');
     document.getElementById('tempoRestante').style.display = 'none';
+
+    // Exibe o dia da semana de amanhã
+    var nomeDiaSemanaAmanha = getNomeDiaSemana(diaSemanaAmanha);
+    var mensagemDiaSemana = document.createElement('p');
+    mensagemDiaSemana.innerText = "Chegará na " + nomeDiaSemanaAmanha;
+    document.querySelector('.chegahoje').appendChild(mensagemDiaSemana);
 }
 
 function formatarHora(horas, minutos) {
@@ -141,7 +164,7 @@ function formatarHora(horas, minutos) {
     var minutosFormatados = minutos.toString().padStart(2, '0');
     return horaFormatada + ':' + minutosFormatados;
 }
-</script></br>
+</script>
 <!-- Teste de Chegará hoje -->
 
 
