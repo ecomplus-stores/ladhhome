@@ -122,6 +122,11 @@ function isDomingo(diaSemana) {
     return diaSemana === 0; // 0 representa domingo
 }
 
+// Função para verificar se é sábado
+function isSabado(diaSemana) {
+    return diaSemana === 6; // 6 representa sábado
+}
+
 // Calcula a diferença em horas e minutos
 var diferenca = horaTermino - agora;
 var horas = Math.floor(diferenca / 1000 / 60 / 60);
@@ -130,15 +135,21 @@ var minutos = Math.floor((diferenca / 1000 / 60) % 60);
 // Obtém o dia da semana atual
 var diaSemanaAtual = agora.getDay();
 
-// Verifica se o tempo ainda não terminou
-if (diferenca > 0 && !isDomingo(diaSemanaAtual)) {
-    // Exibe "Chegará hoje" se o tempo ainda não tiver terminado e não for domingo
+// Verifica se o tempo ainda não terminou e não é domingo ou sábado
+if (diferenca > 0 && !isDomingo(diaSemanaAtual) && !isSabado(diaSemanaAtual)) {
+    // Exibe "Chegará hoje" se o tempo ainda não tiver terminado
     document.getElementById('horarioChegada').innerText = "Hoje";
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
 } else {
     // Caso o tempo tenha terminado ou seja domingo, exibe "Chegará amanhã comprando até 12:55"
+    // ou no sábado, exibe "Chegará na segunda-feira"
     var dataLimite = new Date();
     dataLimite.setDate(dataLimite.getDate() + 1); // Adiciona 1 dia à data atual para obter a data de amanhã
+
+    if (isSabado(diaSemanaAtual)) {
+        dataLimite.setDate(dataLimite.getDate() + 1); // Adiciona mais 1 dia para pular o domingo
+    }
+
     dataLimite.setHours(12, 55, 0, 0);
 
     var diferencaAmanha = dataLimite - agora;
@@ -148,11 +159,11 @@ if (diferenca > 0 && !isDomingo(diaSemanaAtual)) {
     // Obtém o dia da semana de amanhã
     var diaSemanaAmanha = dataLimite.getDay();
 
-    document.getElementById('horarioChegada').innerText = "Amanhã";
+    document.getElementById('horarioChegada').innerText = isSabado(diaSemanaAtual) ? "Segunda-feira" : "Amanhã";
     document.querySelector('.chegahoje').classList.add('ativo');
     document.getElementById('tempoRestante').style.display = 'none';
 
-    // Exibe o dia da semana de amanhã
+    // Exibe o dia da semana de amanhã (ou segunda-feira, caso seja sábado)
     var nomeDiaSemanaAmanha = getNomeDiaSemana(diaSemanaAmanha);
     var mensagemDiaSemana = document.createElement('p');
     mensagemDiaSemana.innerText = "Chegará na " + nomeDiaSemanaAmanha;
