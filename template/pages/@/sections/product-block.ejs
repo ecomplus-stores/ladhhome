@@ -142,12 +142,12 @@ if (diferenca > 0 && !isDomingo(diaSemanaAtual) && !isSabado(diaSemanaAtual)) {
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
 } else {
     // Caso o tempo tenha terminado ou seja domingo, exibe "Chegará amanhã comprando até 12:55"
-    // ou no sábado, exibe "Chegará na segunda-feira"
+    // ou no sábado, exibe "Chegará Segunda-feira"
     var dataLimite = new Date();
     dataLimite.setDate(dataLimite.getDate() + 1); // Adiciona 1 dia à data atual para obter a data de amanhã
 
     if (isSabado(diaSemanaAtual)) {
-        dataLimite.setDate(dataLimite.getDate() + 1); // Adiciona mais 1 dia para pular o domingo
+        dataLimite.setDate(dataLimite.getDate() + 2); // Adiciona mais 2 dias para pular o domingo e chegar à segunda-feira
     }
 
     dataLimite.setHours(12, 55, 0, 0);
@@ -156,18 +156,13 @@ if (diferenca > 0 && !isDomingo(diaSemanaAtual) && !isSabado(diaSemanaAtual)) {
     var horasAmanha = Math.floor(diferencaAmanha / 1000 / 60 / 60);
     var minutosAmanha = Math.floor((diferencaAmanha / 1000 / 60) % 60);
 
-    // Obtém o dia da semana de amanhã
+    // Obtém o dia da semana de amanhã (ou segunda-feira, caso seja sábado)
     var diaSemanaAmanha = dataLimite.getDay();
+    var nomeDiaSemanaAmanha = getNomeDiaSemana(diaSemanaAmanha);
 
-    document.getElementById('horarioChegada').innerText = isSabado(diaSemanaAtual) ? "Segunda-feira" : "Amanhã";
+    document.getElementById('horarioChegada').innerText = isSabado(diaSemanaAtual) ? "Segunda-feira" : "Amanhã " + nomeDiaSemanaAmanha;
     document.querySelector('.chegahoje').classList.add('ativo');
     document.getElementById('tempoRestante').style.display = 'none';
-
-    // Exibe o dia da semana de amanhã (ou segunda-feira, caso seja sábado)
-    var nomeDiaSemanaAmanha = getNomeDiaSemana(diaSemanaAmanha);
-    var mensagemDiaSemana = document.createElement('p');
-    mensagemDiaSemana.innerText = "Chegará na " + nomeDiaSemanaAmanha;
-    document.querySelector('.chegahoje').appendChild(mensagemDiaSemana);
 }
 
 function formatarHora(horas, minutos) {
