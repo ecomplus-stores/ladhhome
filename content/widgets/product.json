@@ -7,7 +7,7 @@
     "buy": "",
     "strHasQuantitySelector": "_",
     "strHasPromotionTimer": "_",
-    "lowQuantityToWarn": 12,
+    "lowQuantityToWarn": 999,
     "maxVariationOptionsBtns": 6,
     "quoteInfo": "(11) 96527-7637"
   }
