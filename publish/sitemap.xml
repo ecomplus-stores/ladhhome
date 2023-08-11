@@ -1166,13 +1166,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/mes-arraia</loc>
+      <loc>https://www.ladhhome.com.br/ladh_home</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/ladh_home</loc>
+      <loc>https://www.ladhhome.com.br/mes-arraia</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
