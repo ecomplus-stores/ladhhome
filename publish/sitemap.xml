@@ -620,6 +620,18 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/03-passador-de-fio-puxa-fio-de-ao-revestido-rolo-20-metros</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/3-ps-adaptador-eltrico-tomada-benjamim-cubo-3d-pino-power</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/casa-e-construcao</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1226,13 +1238,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/contato</loc>
+      <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
+      <loc>https://www.ladhhome.com.br/pages/contato</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
