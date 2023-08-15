@@ -494,6 +494,18 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/suporte-notebook-tablet-ergonmico-dobrvel-ajuste-resistente</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/kit-2-esptulas-inox-lanche-curva-chapeiro-e-cozinha</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/casa-e-construcao</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1106,13 +1118,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
+      <loc>https://www.ladhhome.com.br/pages/contato</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/contato</loc>
+      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
