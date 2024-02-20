@@ -1,5 +1,5 @@
 {
-  "trigger": "65d506b787ab487fbfc05b4c",
-  "resource": "products",
-  "slug": "lmpada-led-super-bulbo-50w-6500k-4000lm-soquete-e27-bivolt,lmpada-led-super-bulbo-20w-6500k-1600lm-soquete-e27-bivolt,lmpada-led-super-bulbo-65w-branco-frio-e27-6500k-bivolt,lmpada-led-super-bulbo-40w-6500k-3200lm-soquete-e27-bivolt,lmpada-led-super-bulbo-30w-6500k-2400lm-soquete-e27-bivolt"
+  "trigger": "65d50c4687ab487fbfc06673",
+  "resource": "categories",
+  "slug": "lampada-led"
 }
