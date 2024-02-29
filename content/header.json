@@ -1,10 +1,14 @@
-{
-  "marketing_stripe": {
-    "text": "Receba seu produto no mesmo dia em São Paulo* (consulte regiões) ",
-    "link": "/pages/entregas-no-mesmo-dia",
-    "background": "#c40000",
-    "color": "#ffffff"
-  },
+ "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-desconto-topo-novo.gif",
+          "link": "/pages/entregas-no-mesmo-dia",
+          "alt": "Chegará hoje Ladh Home",
+          "mobile_img": "/img/uploads/receba-hoje-banner-detalhes-produtos-mobile.jpg"
+        }
+      ]
+    },
   "contacts_stripe": {
     "pages": [],
     "phone_wpp": false,
