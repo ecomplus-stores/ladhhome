@@ -4,12 +4,12 @@
     "link": "/pages/entregas-no-mesmo-dia",
     "background": "#c40000",
     "color": "#ffffff"
-  },
+  }, 
   "contacts_stripe": {
     "pages": [],
     "phone_wpp": false,
     "socials": false
-  },
+  }, 
   "categories_list": {
     "featured": [],
     "random": 10,
