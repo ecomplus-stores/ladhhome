@@ -23,12 +23,13 @@
   "stamps": [
     {
       "src": "/img/uploads/ssl-safe.png",
-      "alt": "Secure connection",
+      "alt": "Conexão Segura",
       "width": 150,
       "height": 62
     },
     {
-      "src": "/img/uploads/letsencrypt-socialshare.png"
+      "src": "/img/uploads/letsencrypt-socialshare.png",
+      "alt": "Let's Endrypt"
     }
   ],
   "payment_methods": {
