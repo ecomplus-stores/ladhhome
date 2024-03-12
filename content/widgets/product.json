@@ -4,7 +4,7 @@
   "desktopOnly": false,
   "options": {
     "buyText": "",
-    "buy": ".product__buy button {\n    width: 200%;\n    /* background-color: #25BA34; */\n    border-color: #b3b3b340;\n    position: relative;\n    overflow: hidden;\n}\n\n\n\n.form-control {\n    background-clip: padding-box;\n    background-color: #efefef;\n    border: 1px solid #fffffffa;\n    border-radius: 5px;\n    color: #000000;\n    display: block;\n    font-size: 1rem;\n    font-weight: 400;\n    height: calc(1.5em + 0.75rem + 2px);\n    line-height: 1.5;\n    padding: 0.375rem 0.75rem;\n    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n    width: 100%;\n}\n\n",
+    "buy": " ",
     "strHasQuantitySelector": "true",
     "strHasPromotionTimer": "true",
     "lowQuantityToWarn": 999,
