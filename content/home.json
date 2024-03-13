@@ -8,6 +8,12 @@
       "full_width": true,
       "slides": [
         {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-tacas-ladh-home.jpg",
+          "mobile_img": "/img/uploads/banner-vinho-ladh-home.jpg"
+        },
+        {
           "img": "/img/uploads/banner-no-mesmo-dia-chegou.png",
           "link": "/ofertas",
           "alt": "Ofertas do site",
@@ -25,7 +31,7 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-tacas-ladh-home.jpg",
+          "img": "/img/uploads/banner-vinho-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-vinho-ladh-home.jpg"
         }
       ]
