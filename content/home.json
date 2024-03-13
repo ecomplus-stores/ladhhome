@@ -14,6 +14,12 @@
           "mobile_img": "/img/uploads/banner-vinho-ladh-home.jpg"
         },
         {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-vinho-ladh-home.jpg",
+          "mobile_img": "/img/uploads/banner-vinho-ladh-home.jpg"
+        },
+        {
           "img": "/img/uploads/banner-no-mesmo-dia-chegou.png",
           "link": "/ofertas",
           "alt": "Ofertas do site",
@@ -27,12 +33,6 @@
           "img": "/img/uploads/frete-gratis.jpg",
           "alt": "Banner Frete no mesmo dia em São Paulo",
           "mobile_img": "/img/uploads/banner-comprou-chegou-mobile.png"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-vinho-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-vinho-ladh-home.jpg"
         }
       ]
     },
