@@ -46,6 +46,12 @@
           "img": "/img/uploads/frete-gratis.jpg",
           "alt": "Banner Frete no mesmo dia em São Paulo",
           "mobile_img": "/img/uploads/banner-comprou-chegou-mobile.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-cadeados-ladh-home.jpg",
+          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg"
         }
       ]
     },
