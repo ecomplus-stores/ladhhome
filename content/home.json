@@ -94,14 +94,6 @@
       "title": "Ofertas"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "sort": "sales",
-      "title": "Mais Vendidos"
-    },
-    {
       "type": "banners-grid",
       "banners": [
         {
@@ -114,6 +106,14 @@
           "img": "/img/uploads/talheres.png"
         }
       ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1,
+      "sort": "sales",
+      "title": "Mais Vendidos"
     },
     {
       "type": "collection-shelf",
