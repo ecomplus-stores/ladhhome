@@ -125,6 +125,10 @@
       "collection_id": "649dea265e606903704de139:categories:Cozinha:/cozinha"
     },
     {
+      "type": "responsive-banner",
+      "img": "/img/uploads/banner-desconto-topo-novo.gif"
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
