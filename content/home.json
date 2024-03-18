@@ -18,7 +18,7 @@
           "end": "",
           "img": "/img/uploads/banner-vinho-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-vinho-ladh-home-mobile.jpg",
-          "link": "https://ladhhome.com.br/tacas"
+          "link": "/acessorios-para-vinho"
         },
         {
           "start": "",
@@ -31,13 +31,15 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-jarras-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-jarras-ladh-home-mobile.jpg"
+          "mobile_img": "/img/uploads/banner-jarras-ladh-home-mobile.jpg",
+          "link": "/jarras"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-cadeados-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg"
+          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg",
+          "link": "/cadeados"
         },
         {
           "img": "/img/uploads/banner-no-mesmo-dia-chegou.png",
