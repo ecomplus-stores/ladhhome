@@ -102,6 +102,20 @@
       "title": "Mais Vendidos"
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/bandejas.png"
+        },
+        {
+          "img": "/img/uploads/porta-mantimentos.png"
+        },
+        {
+          "img": "/img/uploads/talheres.png"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
