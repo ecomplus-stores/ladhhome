@@ -98,13 +98,16 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/bandejas.png"
+          "img": "/img/uploads/bandejas.png",
+          "link": "/travessas-e-assadeiras"
         },
         {
-          "img": "/img/uploads/porta-mantimentos.png"
+          "img": "/img/uploads/porta-mantimentos.png",
+          "link": "/potes-para-alimentos"
         },
         {
-          "img": "/img/uploads/talheres.png"
+          "img": "/img/uploads/talheres.png",
+          "link": "/talheres"
         }
       ]
     },
