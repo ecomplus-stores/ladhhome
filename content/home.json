@@ -41,21 +41,6 @@
           "img": "/img/uploads/banner-cadeados-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg",
           "link": "/cadeados"
-        },
-        {
-          "img": "/img/uploads/banner-no-mesmo-dia-chegou.png",
-          "link": "/ofertas",
-          "alt": "Ofertas do site",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2029-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/banner-no-mesmo-dia-chegou-mobile.png"
-        },
-        {
-          "start": "2023-06-25T11:54:35.691Z",
-          "end": "",
-          "img": "/img/uploads/frete-gratis.jpg",
-          "alt": "Banner Frete no mesmo dia em São Paulo",
-          "mobile_img": "/img/uploads/banner-comprou-chegou-mobile.png"
         }
       ]
     },
