@@ -41,6 +41,12 @@
           "img": "/img/uploads/banner-cadeados-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg",
           "link": "/cadeados"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-ventilador-ladh-home.jpg",
+          "mobile_img": "/img/uploads/banner-ventilador-ladh-home.jpg"
         }
       ]
     },
