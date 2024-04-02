@@ -100,6 +100,8 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
   <span><i class="i-shipping-fast"></i> Chegará 
     <strong id="horarioChegada" style="display: inline-block;"></strong>
   </span>
+  <br>
+  <span id="mensagemSaoPaulo" style="font-size: 14px; color: #666;">Somente em São Paulo</span>
 </p>
 <p class="chegahojep" id="tempoRestante">h</p>
 
@@ -107,9 +109,6 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 // Define a hora de término (12:55)
 var horaTermino = new Date();
 horaTermino.setHours(12, 55, 0, 0);
-
-// Obtém a hora atual
-var agora = new Date();
 
 // Função para obter o nome do dia da semana
 function getNomeDiaSemana(diaSemana) {
@@ -140,7 +139,6 @@ if (diferenca > 0 && !isDomingo(diaSemanaAtual) && !isSabado(diaSemanaAtual)) {
     // Exibe "Chegará hoje" se o tempo ainda não tiver terminado
     document.getElementById('horarioChegada').innerText = "Hoje";
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
-    document.getElementById('saopaulo').innerHTML = "Somente em São Paulo";
 } else {
     // Caso o tempo tenha terminado ou seja domingo, exibe "Chegará amanhã comprando até 12:55"
     // ou no sábado, exibe "Chegará Segunda-feira"
