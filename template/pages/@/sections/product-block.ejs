@@ -140,6 +140,7 @@ if (diferenca > 0 && !isDomingo(diaSemanaAtual) && !isSabado(diaSemanaAtual)) {
     // Exibe "Chegará hoje" se o tempo ainda não tiver terminado
     document.getElementById('horarioChegada').innerText = "Hoje";
     document.getElementById('tempoRestante').innerHTML = "Comprando dentro da próxima <span style='color: #ff6615;'>" + horas + " h " + minutos + " min</span>";
+    document.getElementById('saopaulo').innerHTML = "Somente em São Paulo";
 } else {
     // Caso o tempo tenha terminado ou seja domingo, exibe "Chegará amanhã comprando até 12:55"
     // ou no sábado, exibe "Chegará Segunda-feira"
