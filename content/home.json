@@ -56,6 +56,17 @@
       "enabled": true
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-home-categorias.jpg"
+        },
+        {
+          "img": "/img/uploads/banner-home-jardim.jpg"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
