@@ -59,10 +59,12 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/banner-home-categorias.jpg"
+          "img": "/img/uploads/banner-home-categorias.jpg",
+          "link": "/cozinha"
         },
         {
-          "img": "/img/uploads/banner-home-jardim.jpg"
+          "img": "/img/uploads/banner-home-jardim.jpg",
+          "link": "/jardinagem"
         }
       ]
     },
