@@ -29,7 +29,7 @@
     },
     {
       "type": "buy-together",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "product-description",
