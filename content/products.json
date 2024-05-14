@@ -20,6 +20,10 @@
       "enabled": true
     },
     {
+      "type": "buy-together",
+      "enabled": true
+    },
+    {
       "type": "product-block",
       "enabled": true,
       "size_guide": {
@@ -30,10 +34,6 @@
     {
       "type": "product-description",
       "title": "Quem comprou este produto, também comprou:",
-      "enabled": true
-    },
-    {
-      "type": "buy-together",
       "enabled": true
     },
     {
