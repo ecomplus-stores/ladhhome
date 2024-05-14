@@ -20,16 +20,16 @@
       "enabled": true
     },
     {
-      "type": "buy-together",
-      "enabled": true
-    },
-    {
       "type": "product-block",
       "enabled": true,
       "size_guide": {
         "image": "",
         "title": ""
       }
+    },
+    {
+      "type": "buy-together",
+      "enabled": true
     },
     {
       "type": "product-description",
