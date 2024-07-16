@@ -764,6 +764,12 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/panelas-e-frigideiras</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/escorredor-macarro-massas-verduras-legumes-ao-inox-grande</loc>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
@@ -1976,13 +1982,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
+      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
+      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2066,13 +2072,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/app/index</loc>
+      <loc>https://www.ladhhome.com.br/admin/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/admin/index</loc>
+      <loc>https://www.ladhhome.com.br/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
