@@ -1190,6 +1190,18 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/martelo-marreta-emborrachada-cabo-plstico-pp</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/martelo-em-ao-com-cabo-emborrachado-curto</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/casa-e-construcao</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2072,13 +2084,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/admin/index</loc>
+      <loc>https://www.ladhhome.com.br/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/app/index</loc>
+      <loc>https://www.ladhhome.com.br/admin/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
