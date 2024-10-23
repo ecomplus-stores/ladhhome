@@ -2084,12 +2084,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/raquete-eltrica-mata-mosquito-pernilongo-segura-bivolt</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/mes-arraia</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2150,12 +2144,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/pages/sobre-nos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -2169,6 +2157,12 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/pages/trocas</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2210,15 +2204,15 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/maintenance/index</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/maintenance/index</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
     </url>
   
 </urlset>
