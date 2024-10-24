@@ -2084,6 +2084,18 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/ar-condicionado-emmeti-inverter-f-9-000-btus-silencioso-220v</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/ar-condicionado-emmeti-inverter-f-12000-btus-silencioso-220v</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/mes-arraia</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2144,6 +2156,12 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/pages/sobre-nos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -2157,12 +2175,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/pages/trocas</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
