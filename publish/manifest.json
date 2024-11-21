@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.588696ae0744afeb526059d4a3eda126.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.4239a757f6987233ca73745045f50cca.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.472f3871b816ca967972f94438f5b319.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.405fb054cc5276088f7e1d0332f2e4ea.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.e56026e1aeb26047c487461cec1b4d8c.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Ladh Home - Para você e seu Lar",
+  "short_name": "Ladh Home",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Receba seu produto no mesmo dia em São Paulo! ",
+  "background_color": "#e71f1f",
+  "theme_color": "#ff0023"
+}
