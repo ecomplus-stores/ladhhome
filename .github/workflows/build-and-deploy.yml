@@ -16,7 +16,7 @@ on:
 jobs:
   build-and-deploy:
     name: Build Storefront and deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     if: |
       github.event.head_commit.message != 'Initial commit' &&
@@ -27,21 +27,21 @@ jobs:
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "::set-output name=url::https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          echo "url=https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" >> "$GITHUB_OUTPUT"
         id: remote_repo
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.ref }}
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v5
         with:
-          node-version: '16.x' 
+          node-version: '16.x'
 
       - name: Cache dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -52,14 +52,14 @@ jobs:
         id: isg_state
         run: |
           if [ -f .isg ]; then
-            echo "::set-output name=rand::$(cat .isg)";
+            echo "rand=$(cat .isg)" >> "$GITHUB_OUTPUT";
           else
-            echo "::set-output name=rand::0";
+            echo "rand=0" >> "$GITHUB_OUTPUT";
           fi
 
       - name: Cache output
         continue-on-error: true
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .deploy/publish
           key: ${{ hashFiles('.bundles.json') }}-${{ hashFiles('template/p*/**') }}-${{ hashFiles('content/**') }}-${{ steps.isg_state.outputs.rand }}
@@ -82,14 +82,14 @@ jobs:
             BUILD_SLUG=$(node -p "require('./.ecomplus.cd.json').slug || false");
             if [ $BUILD_SLUG != false ]; then
               npm run build -- --prerender=index,$BUILD_SLUG --no-bundler;
-              echo "::set-output name=isg::2";
+              echo "isg=2" >> "$GITHUB_OUTPUT";
             else
               npm run build -- --prerender-limit=1000 --no-bundler;
-              echo "::set-output name=isg::1";
+              echo "isg=1" >> "$GITHUB_OUTPUT";
             fi
           else
             npm run build -- --prerender=index,app/index,search,404 --prerender-limit=300;
-            echo "::set-output name=isg::0";
+            echo "isg=0" >> "$GITHUB_OUTPUT";
           fi
         id: partial_build
 
@@ -104,14 +104,14 @@ jobs:
           else
             ISG_STATE=$(cat .isg);
           fi
-          echo "::set-output name=rand::$ISG_STATE";
+          echo "rand=$ISG_STATE" >> "$GITHUB_OUTPUT";
 
       - name: Config Git and check diff
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
           git add .isg .bundles.json content template
-          (git diff-index --quiet HEAD && echo "::set-output name=diff::0") || echo "::set-output name=diff::1"
+          (git diff-index --quiet HEAD && echo "diff=0" >> "$GITHUB_OUTPUT") || echo "diff=1" >> "$GITHUB_OUTPUT"
         id: git_diff
 
       - name: Commit local file changes
@@ -170,17 +170,17 @@ jobs:
           git checkout master
 
       - name: Push to branch dist to trigger deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: dist
-          FOLDER: .deploy
-          CLEAN: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dist
+          folder: .deploy
+          clean: true
 
       - name: Cache output force update
         if: steps.new_isg_state.outputs.rand != steps.isg_state.outputs.rand
         continue-on-error: true
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .deploy/publish
           key: ${{ hashFiles('.bundles.json') }}-${{ hashFiles('template/p*/**') }}-${{ hashFiles('content/**') }}-${{ steps.new_isg_state.outputs.rand }}
