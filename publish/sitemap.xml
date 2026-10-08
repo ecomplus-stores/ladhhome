@@ -1334,18 +1334,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/mes-arraia</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/ladh_home</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/casa-e-construcao</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2138,6 +2126,36 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/para-servir</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/utilidades</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/outros</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/mes-arraia</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/ladh_home</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -2180,13 +2198,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
+      <loc>https://www.ladhhome.com.br/pages/primeira-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/primeira-compra</loc>
+      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
