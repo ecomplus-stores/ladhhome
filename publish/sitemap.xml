@@ -1334,12 +1334,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/ladh_home</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/casa-e-construcao</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1371,12 +1365,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/cozinha</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/kit-churrasco</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1647,12 +1635,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/cozimento</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/cestas-para-fritadeiras</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1994,12 +1976,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/travessas-e-assadeiras</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/adaptadores-de-tomadas</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2084,12 +2060,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/panelas-e-frigideiras</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/seguranca</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2150,7 +2120,19 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/copos-e-jarras</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/mes-arraia</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/ladh_home</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -2168,13 +2150,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
+      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
+      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2258,12 +2240,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/admin/index</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
@@ -2273,6 +2249,12 @@
       <loc>https://www.ladhhome.com.br/maintenance/index</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/admin/index</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
     </url>
   
 </urlset>
