@@ -2306,13 +2306,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/faq</loc>
+      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
+      <loc>https://www.ladhhome.com.br/pages/faq</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2324,19 +2324,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/pages/primeira-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
+      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2348,13 +2342,19 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/trocas</loc>
+      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
       <loc>https://www.ladhhome.com.br/pages/termos</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2378,21 +2378,15 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/search</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/</loc>
       <changefreq>daily</changefreq>
       <priority>1</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/admin/index</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
+      <loc>https://www.ladhhome.com.br/search</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
     </url>
   
     <url>
@@ -2405,6 +2399,12 @@
       <loc>https://www.ladhhome.com.br/maintenance/index</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/admin/index</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
     </url>
   
 </urlset>
