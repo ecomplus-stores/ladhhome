@@ -1334,18 +1334,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/mes-arraia</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/ladh_home</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/casa-e-construcao</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1365,12 +1353,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/fita-dupla-face</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/filtro-de-linha</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1442,12 +1424,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/multimetros</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/eletronicos</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1472,43 +1448,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/protetores-de-quinas-e-cantos</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/protetores-de-tomada</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/banheiros</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/papelaria-e-armarinho</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pistolas-de-cola</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/cadeados</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/torneiras</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1527,18 +1473,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/filtros-de-linha</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/manicure-e-pedicure</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/repelentes</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1580,12 +1514,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/corte-e-desbaste</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/serrotes</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1616,12 +1544,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/irrigacao</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/fita-isolante</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1629,12 +1551,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/adaptadores-de-tomadas</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/lampioes</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1826,13 +1742,19 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
+      <loc>https://www.ladhhome.com.br/mes-arraia</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/contato</loc>
+      <loc>https://www.ladhhome.com.br/ladh_home</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1844,7 +1766,7 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/faq</loc>
+      <loc>https://www.ladhhome.com.br/pages/contato</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1856,19 +1778,25 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/pages/faq</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/pages/pagamentos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
+      <loc>https://www.ladhhome.com.br/pages/primeira-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/primeira-compra</loc>
+      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1886,13 +1814,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/termos</loc>
+      <loc>https://www.ladhhome.com.br/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/trocas</loc>
+      <loc>https://www.ladhhome.com.br/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1928,13 +1856,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/admin/index</loc>
+      <loc>https://www.ladhhome.com.br/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/app/index</loc>
+      <loc>https://www.ladhhome.com.br/admin/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
