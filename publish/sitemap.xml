@@ -2240,19 +2240,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/pages/faq</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
+      <loc>https://www.ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2264,19 +2258,25 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/pages/primeira-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/sobre-nos</loc>
+      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/privacidade</loc>
+      <loc>https://www.ladhhome.com.br/pages/sobre-nos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
