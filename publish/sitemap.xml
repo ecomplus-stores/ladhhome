@@ -182,12 +182,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/cuidado-da-saude</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/balancas</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -500,12 +494,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/eletrodomesticos</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/ventiladores</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -615,12 +603,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/lampioes</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/celulares-e-telefones</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -2276,12 +2258,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/contato</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/pages/faq</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -2295,6 +2271,12 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/pages/contato</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -2318,13 +2300,13 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/termos</loc>
+      <loc>https://www.ladhhome.com.br/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/trocas</loc>
+      <loc>https://www.ladhhome.com.br/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
