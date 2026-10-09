@@ -1442,12 +1442,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/bebes</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/papelaria-e-armarinho</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1503,12 +1497,6 @@
   
     <url>
       <loc>https://www.ladhhome.com.br/lampada-led</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/alicates</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -1640,12 +1628,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/limpeza-e-lavanderia</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/banheiro</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1754,19 +1736,7 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/pages/contato</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1778,7 +1748,19 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/pages/entrega</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/pages/faq</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1796,7 +1778,7 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/pages/politicas-de-reembolso</loc>
+      <loc>https://www.ladhhome.com.br/pages/arrependimento-de-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1832,12 +1814,6 @@
     </url>
   
     <url>
-      <loc>https://www.ladhhome.com.br/404</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.ladhhome.com.br/blog</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -1856,6 +1832,18 @@
     </url>
   
     <url>
+      <loc>https://www.ladhhome.com.br/404</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.ladhhome.com.br/maintenance/index</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.ladhhome.com.br/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
@@ -1865,12 +1853,6 @@
       <loc>https://www.ladhhome.com.br/admin/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.ladhhome.com.br/maintenance/index</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
     </url>
   
 </urlset>
