@@ -35,7 +35,21 @@ if (Array.isArray(widgets)) {
 
 // page title and description
 const title = _.state.meta_title || _.state.name || _.state.title || _.settings.name
-const description = _.state.meta_description || _.state.short_description || _.settings.description
+// unique fallback description for products and listings instead of the store-wide one
+let autoDescription
+if (resource && _.state.name) {
+  const name = _.state.name.length > 70 ? _.state.name.slice(0, 67).trim() + '...' : _.state.name
+  if (resource === 'products') {
+    autoDescription = _.ecomUtils.inStock(_.state)
+      ? `${name} por ${_.ecomUtils.formatMoney(_.ecomUtils.price(_.state), _.settings.currency, _.lang)} na Ladh Home. ` +
+        'Até 3x sem juros ou 5% off no Pix. Entrega no mesmo dia em SP.'
+      : `${name} na Ladh Home. Veja produtos parecidos com entrega no mesmo dia em SP.`
+  } else {
+    autoDescription = `${name} na Ladh Home: até 3x sem juros ou 5% off no Pix. ` +
+      'Entrega no mesmo dia em São Paulo.'
+  }
+}
+const description = _.state.meta_description || _.state.short_description || autoDescription || _.settings.description
 
 let url, domain, social, ogLocale, ogImage
 if (pathname) {
