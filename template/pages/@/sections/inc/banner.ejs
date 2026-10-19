@@ -59,6 +59,8 @@ if (opt.img) {
           <img
             src="<%= _.assetsPrefix || '' %><%= opt.img.replace('.webp', '.png') %>"
             alt="<%= opt.alt %>"
+            fetchpriority="high"
+            decoding="async"
             <% if (width) { %>
               width="<%= width %>"
               height="<%= height %>"

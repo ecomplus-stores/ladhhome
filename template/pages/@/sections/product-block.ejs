@@ -278,7 +278,7 @@ function formatarHora(horas, minutos) {
 
 <%
 const productJsonLd = {
-  '@context': 'http://schema.org',
+  '@context': 'https://schema.org',
   '@type': 'Product',
   sku: _.state.sku,
   description: _.state.short_description || _.state.meta_description || _.ecomUtils.name(_.state),
@@ -286,20 +286,21 @@ const productJsonLd = {
   offers: {
     '@type': 'Offer',
     url: `https://${_.settings.domain}/${_.state.slug}`,
-    availability: `${(_.ecomUtils.inStock(_.state) ? 'In' : 'OutOf')}Stock`,
+    availability: `https://schema.org/${(_.ecomUtils.inStock(_.state) ? 'In' : 'OutOf')}Stock`,
     priceCurrency: _.settings.currency,
     price: _.ecomUtils.price(_.state),
-    itemCondition: `http://schema.org/${(_.state.condition === 'new' ? 'New' : 'Used')}Condition`,
+    itemCondition: `https://schema.org/${(_.state.condition === 'used' ? 'Used' : 'New')}Condition`,
+    // promo end date when there is one, otherwise one year from the build
     priceValidUntil: _.ecomUtils.onPromotion(_.state) && _.state.price_effective_date && _.state.price_effective_date.end
       ? _.state.price_effective_date.end.slice(0, 10)
-      : undefined,
+      : new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
     seller: {
       '@type': 'Organization',
       name: _.settings.name || _.store.name
     }
   }
 }
-if (_.state.brands && _.state.brands[0]) {
+if (_.state.brands && _.state.brands[0] && _.state.brands[0].name) {
   productJsonLd.brand = {
     '@type': 'Brand',
     name: _.state.brands[0].name

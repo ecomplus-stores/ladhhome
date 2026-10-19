@@ -1,6 +1,6 @@
 {
-  "meta_title": "Ladh Home para você e seu Lar",
-  "meta_description": "Descubra a Ladh Home e transforme seu lar em um refúgio perfeito para você. Encontre os melhores produtos e soluções para deixar sua casa ainda mais aconchegante e acolhedora. Explore nossa ampla seleção de itens de decoração, móveis, utensílios e muito mais. Faça da sua casa um lugar especial com a Ladh Home.",
+  "meta_title": "Ladh Home – Utilidades para Casa, Cozinha e Construção",
+  "meta_description": "Cadeados, resistências de chuveiro, utensílios de cozinha, lâmpadas LED e ferramentas com entrega no mesmo dia em SP, 5% off no Pix e até 3x sem juros.",
   "sections": [
     {
       "type": "banner-slider",
@@ -13,42 +13,47 @@
           "img": "/img/uploads/banner-potes-hermeticos.jpg",
           "mobile_img": "/img/uploads/ventilador-banner-ladh-home-preto-mobile.jpg",
           "link": "/ventilador-de-coluna-turbo-6-ps-40cm-de-dimetro-110v/220",
-          "alt": "aaa"
+          "alt": "Ventilador de coluna turbo 40cm com entrega no mesmo dia"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-tacas-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-copos-e-tacas-ladh-home-mobile.jpg",
-          "link": "/tacas"
+          "link": "/tacas",
+          "alt": "Taças e copos de vidro"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-vinho-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-vinho-ladh-home-mobile.jpg",
-          "link": "/kit-vinho"
+          "link": "/acessorios-para-vinho",
+          "alt": "Acessórios para vinho: decanter e aerador"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-ofertas-ladh-home2.jpg",
           "mobile_img": "/img/uploads/banner-ofertas-ladh-home2-mobile.jpg",
-          "link": "/ofertas"
+          "link": "/ofertas",
+          "alt": "Ofertas Ladh Home"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-jarras-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-jarras-ladh-home-mobile.jpg",
-          "link": "/jarras"
+          "link": "/jarras",
+          "alt": "Jarras de vidro para suco e água"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-cadeados-ladh-home.jpg",
           "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg",
-          "link": "/cadeados"
+          "link": "/cadeados",
+          "alt": "Cadeados de latão e kits"
         }
       ]
     },
@@ -57,15 +62,21 @@
       "enabled": true
     },
     {
+      "type": "custom-html",
+      "html": "<h1 class=\"home-h1 text-center mb-0\">Utilidades para casa, cozinha e construção com entrega hoje em SP</h1>"
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
           "img": "/img/uploads/banner-home-categorias.jpg",
-          "link": "/cozinha"
+          "link": "/cozinha",
+          "alt": "Utensílios de cozinha"
         },
         {
           "img": "/img/uploads/banner-home-jardim.jpg",
-          "link": "/jardinagem"
+          "link": "/jardim",
+          "alt": "Itens para jardim"
         }
       ]
     },
@@ -83,12 +94,14 @@
         {
           "img": "/img/uploads/aumente-o-som-banner-site.png",
           "mobile_img": "/img/uploads/aumente-o-som-banner-site-mobile.png",
-          "link": "/audio-portatil-e-acessorios"
+          "link": "/audio-portatil-e-acessorios",
+          "alt": "Caixas de som bluetooth portáteis"
         },
         {
           "img": "/img/uploads/transforme-seu-banho-banner-site.png",
           "mobile_img": "/img/uploads/transforme-seu-banho-banner-site-mobile.png",
-          "link": "/resistencia-chuveiro"
+          "link": "/resistencia-chuveiro",
+          "alt": "Resistências de chuveiro 127V e 220V"
         }
       ]
     },
@@ -105,15 +118,18 @@
       "banners": [
         {
           "img": "/img/uploads/bandejas.png",
-          "link": "/travessas-e-assadeiras"
+          "link": "/bandejas",
+          "alt": "Bandejas para servir"
         },
         {
           "img": "/img/uploads/porta-mantimentos.png",
-          "link": "/potes-para-alimentos"
+          "link": "/potes-para-alimentos",
+          "alt": "Potes para guardar alimentos"
         },
         {
           "img": "/img/uploads/talheres.png",
-          "link": "/talheres"
+          "link": "/talheres",
+          "alt": "Talheres inox"
         }
       ]
     },

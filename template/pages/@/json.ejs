@@ -70,11 +70,37 @@ const productCardStamps = (_.cms('stamps') || {}).stamps_list || []
 %>/*-->*/</script>
 
 <script type="application/ld+json"><%-
-  JSON.stringify({
-    '@context': 'http://schema.org',
-    '@type': 'Organization',
-    name: _.settings.name || _.store.name,
-    url: _.store.homepage || `https://${(_.store.domain || _.settings.domain)}/`,
-    logo: (_.store.logo && _.store.logo.url) || `https://${_.settings.domain}${_.settings.logo}`
-  })
+  (() => {
+    const contacts = _.cms('contacts') || {}
+    const org = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: _.settings.short_name || _.settings.name || _.store.name,
+      url: `https://${(_.settings.domain || _.store.domain)}/`,
+      logo: (_.store.logo && _.store.logo.url) || `https://${_.settings.domain}${_.settings.logo}`
+    }
+    if (contacts.doc_number) org.taxID = contacts.doc_number
+    if (contacts.email) org.email = contacts.email
+    if (contacts.address) {
+      org.address = {
+        '@type': 'PostalAddress',
+        streetAddress: contacts.address,
+        addressCountry: _.settings.country_code || 'BR'
+      }
+    }
+    if (contacts.whatsapp || contacts.phone) {
+      org.contactPoint = {
+        '@type': 'ContactPoint',
+        telephone: `+55 ${contacts.whatsapp || contacts.phone}`,
+        contactType: 'customer service',
+        areaServed: 'BR',
+        availableLanguage: 'Portuguese'
+      }
+    }
+    const sameAs = ['instagram', 'facebook', 'youtube', 'tiktok', 'pinterest', 'twitter']
+      .map(key => contacts[key])
+      .filter((link, i, list) => link && link.startsWith('http') && list.indexOf(link) === i)
+    if (sameAs.length) org.sameAs = sameAs
+    return JSON.stringify(org)
+  })()
 %></script>
