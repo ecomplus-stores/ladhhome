@@ -143,6 +143,29 @@ if (pathname) {
     <link rel="preconnect" href="<%= _.assetsPrefix || '' %>/" crossorigin>
     <link rel="dns-prefetch" href="<%= _.assetsPrefix || '' %>/">
   <% } %>
+  <%
+  // preload the first home banner, which is the LCP element on the home page
+  if (_.pageName === 'home') {
+    const slider = ((_.state.sections || []).find(({ type }) => type === 'banner-slider') || {})
+    const now = Date.now()
+    const slide = (slider.slides || []).find(({ start, end }) => {
+      return !(start && now < new Date(start).getTime()) && !(end && now > new Date(end).getTime())
+    })
+    if (slide && slide.img) {
+      %>
+      <link rel="preload" as="image" fetchpriority="high"
+        href="<%= _.assetsPrefix || '' %><%= slide.img.replace('.webp', '.png') %>"
+        <% if (slide.mobile_img) { %>media="(min-width: 576px)"<% } %>>
+      <% if (slide.mobile_img) { %>
+        <link rel="preload" as="image" fetchpriority="high"
+          href="<%= _.assetsPrefix || '' %><%= slide.mobile_img %>"
+          media="(max-width: 575.98px)">
+      <% } %>
+      <%
+    }
+  }
+  %>
+  <link rel="preconnect" href="https://ecoms1.com/" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
   <% if (resource) { %>
