@@ -2099,3 +2099,37 @@ body .banner-slider {
     line-height: 0;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Topo compacto ao rolar: o menu de departamentos (e a faixa de CEP no celular)
+// recolhe e fica só a barra principal (.lh-top). Classe colocada em custom-js/pages.js.
+// ---------------------------------------------------------------------------
+
+body .lh-header .lh-menu__inner,
+body .lh-header .lh-cep-strip {
+  max-height: 64px;
+  transition: max-height .25s ease, padding .25s ease, opacity .2s ease;
+}
+
+body .lh-header.is-compact {
+  .lh-menu__inner,
+  .lh-cep-strip {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .lh-dept {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body .lh-header .lh-menu__inner,
+  body .lh-header .lh-cep-strip {
+    transition: none;
+  }
+}

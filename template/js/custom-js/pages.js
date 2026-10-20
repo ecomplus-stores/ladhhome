@@ -153,3 +153,77 @@ if (window.matchMedia('(max-width: 767.98px)').matches) {
     $col.open = false
   })
 }
+
+// ---------------------------------------------------------------------------
+// Topo compacto: ao rolar a página o menu de departamentos recolhe e fica só a
+// barra principal; volta quando a página chega perto do topo (folga evita piscar)
+// ---------------------------------------------------------------------------
+
+const $lhHeader = document.getElementById('header')
+if ($lhHeader && $lhHeader.classList.contains('lh-header')) {
+  let isCompact = false
+  const updateHeader = () => {
+    const y = window.scrollY || window.pageYOffset
+    if (!isCompact && y > 160) {
+      isCompact = true
+    } else if (isCompact && y < 60) {
+      isCompact = false
+    } else {
+      return
+    }
+    $lhHeader.classList.toggle('is-compact', isCompact)
+  }
+  window.addEventListener('scroll', updateHeader, { passive: true })
+  updateHeader()
+}
+
+// ---------------------------------------------------------------------------
+// Busca: placeholder "digitando" palavras-chave dos produtos mais procurados
+// ---------------------------------------------------------------------------
+
+const $lhSearch = document.getElementById('search-input')
+if ($lhSearch) {
+  const words = [
+    'cadeado Tetra 32mm',
+    'resistência Lorenzetti',
+    'potes herméticos de vidro',
+    'decanter de vinho',
+    'tapete para air fryer',
+    'jarra de vidro',
+    'jogo de taças',
+    'caixa de som bluetooth',
+    'alicate universal',
+    'flanela de microfibra'
+  ]
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduceMotion) {
+    $lhSearch.placeholder = words.slice(0, 3).join(', ') + '…'
+  } else {
+    let word = 0
+    let chars = 0
+    let deleting = false
+    const tick = () => {
+      // pausa enquanto a pessoa usa o campo ou a aba está escondida
+      if (document.activeElement === $lhSearch || $lhSearch.value || document.hidden) {
+        $lhSearch.placeholder = ''
+        setTimeout(tick, 600)
+        return
+      }
+      const text = words[word]
+      chars += deleting ? -1 : 1
+      $lhSearch.placeholder = text.slice(0, chars) + (deleting ? '' : '|')
+      let delay = deleting ? 35 : 75
+      if (!deleting && chars >= text.length) {
+        $lhSearch.placeholder = text
+        deleting = true
+        delay = 1700
+      } else if (deleting && chars <= 0) {
+        deleting = false
+        word = (word + 1) % words.length
+        delay = 350
+      }
+      setTimeout(tick, delay)
+    }
+    tick()
+  }
+}
