@@ -146,3 +146,10 @@ if ($delivery) {
   update()
   setInterval(update, 30000)
 }
+
+// rodapé: no celular as colunas de links começam fechadas (sanfona)
+if (window.matchMedia('(max-width: 767.98px)').matches) {
+  document.querySelectorAll('.lh-foot__col').forEach($col => {
+    $col.open = false
+  })
+}
