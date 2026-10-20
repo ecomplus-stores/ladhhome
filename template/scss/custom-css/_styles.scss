@@ -1529,3 +1529,105 @@ body .lh-cats__t--big .lh-cats__tx {
     }
   }
 }
+
+// ---------------------------------------------------------------------------
+// Títulos das vitrines de produtos (template/pages/@/sections/inc/products-carousel.ejs)
+// ---------------------------------------------------------------------------
+
+body .lh-shelf-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 14px;
+  padding: 0 var(--spacer-1, 4px);
+  font-family: 'Jost', sans-serif;
+}
+
+body .lh-shelf-head__tx {
+  position: relative;
+  padding-left: 16px;
+  min-width: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 5px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #e3262b, #c40000);
+  }
+}
+
+body .lh-shelf-head__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  color: #1d1d1f;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: #c40000;
+    }
+  }
+}
+
+body .lh-shelf-head__sub {
+  margin: 4px 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+}
+
+body .lh-shelf-head__more {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #c40000;
+  background: #fff;
+  border: 1px solid #f1d4d4;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+
+  &:hover {
+    background: #c40000;
+    border-color: #c40000;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .lh-shelf-head {
+    margin-bottom: 10px;
+  }
+
+  body .lh-shelf-head__tx {
+    padding-left: 12px;
+  }
+
+  body .lh-shelf-head__title {
+    font-size: 21px;
+  }
+
+  body .lh-shelf-head__sub {
+    font-size: 13px;
+  }
+
+  body .lh-shelf-head__more {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

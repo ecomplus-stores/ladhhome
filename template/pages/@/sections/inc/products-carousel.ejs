@@ -27,22 +27,43 @@
     data-title="<%= title %>"
   >
     <% if (!opt.headless) { %>
-      <h4 class="products-carousel__title">
-        <% if (opt.title || opt.collection) { %>
-          <% if (link) { %>
-            <a href="<%= link %>">
+      <%
+      // título da vitrine estilo Ladh Home: barra vermelha, frase de apoio e link "Ver todos"
+      const titleLink = (opt.title || opt.collection) ? link : '/search'
+      const lowerTitle = String(title).toLowerCase()
+      let subtitle = ''
+      if (/novidade/.test(lowerTitle)) {
+        subtitle = 'Os produtos que acabaram de chegar'
+      } else if (/oferta/.test(lowerTitle)) {
+        subtitle = 'Descontos especiais e mais 10% off no Pix'
+      } else if (/mais vendidos em /.test(lowerTitle)) {
+        subtitle = 'Os mais procurados ' + String(title).replace(/^mais vendidos /i, '')
+      } else if (/mais vendidos/.test(lowerTitle)) {
+        subtitle = 'Os favoritos dos nossos clientes'
+      }
+      %>
+      <div class="lh-shelf-head">
+        <div class="lh-shelf-head__tx">
+          <h2 class="lh-shelf-head__title">
+            <% if (titleLink) { %>
+              <a href="<%= titleLink %>"><%= title %></a>
+            <% } else { %>
               <%= title %>
-            </a>
-          <% } else { %>
-            <span><%= title %></span>
+            <% } %>
+          </h2>
+          <% if (subtitle) { %>
+            <p class="lh-shelf-head__sub"><%= subtitle %></p>
           <% } %>
-        <% } else { %>
-          <a href="/search">
-            <%= title %>
+        </div>
+        <% if (titleLink) { %>
+          <a class="lh-shelf-head__more" href="<%= titleLink %>">
+            Ver todos
+            <%- await include('@/layout/inc/lh-icon', { name: 'arrow-right', size: 16 }) %>
           </a>
         <% } %>
-      </h4>
+      </div>
     <% } %>
+
 
     <div
       class="glide"
