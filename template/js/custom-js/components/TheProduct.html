@@ -350,13 +350,13 @@
                 >
                   <slot name="payment-gateways" v-bind="{ paymentOptions }">
                     <div
-                      v-for="paymentOption in paymentOptions"
+                      v-for="paymentOption in lhPaymentOptions"
                       :key="paymentOption.app_id"
                       :id="`product-payment-${paymentOption.app_id}`"
                       class="lh-sp__gateway"
                     >
                       <slot :name="`payment-${paymentOption.app_id}`">
-                        <payment-option
+                        <lh-payment-option
                           v-for="(gateway, i) in paymentOption.payment_gateways"
                           :key="`${paymentOption.app_id}-${i}`"
                           :payment-gateway="gateway"

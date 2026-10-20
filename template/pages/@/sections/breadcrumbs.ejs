@@ -39,7 +39,7 @@ if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
             </li>
           <% } else { %>
             <li class="breadcrumb-item d-none d-md-block active" aria-current="page">
-              <%= name %>
+              <span class="lh-bc__cur"><%= name %></span>
             </li>
           <% } %>
         <% }) %>

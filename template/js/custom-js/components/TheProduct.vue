@@ -3,12 +3,14 @@
 // com preço no Pix em destaque, caixa de entrega, botão Comprar verde, WhatsApp e selos de confiança.
 import TheProduct from '@ecomplus/storefront-components/src/js/TheProduct.js'
 import LhProductPrices from './LhProductPrices.vue'
+import LhPaymentOption from './LhPaymentOption.vue'
 
 export default {
   ...TheProduct,
   components: {
     ...TheProduct.components,
-    LhProductPrices
+    LhProductPrices,
+    LhPaymentOption
   },
 
   data () {
@@ -42,6 +44,16 @@ export default {
         ? 'Chega segunda-feira em São Paulo'
         : `Chega amanhã, ${names[target.getDay()]}, em São Paulo`
       return { title, ms: target - now }
+    },
+
+    // formas de pagamento com desconto (Pix) primeiro, como no preview
+    lhPaymentOptions () {
+      const hasDiscount = gateway => Boolean(gateway.discount && gateway.discount.value > 0)
+      const sortGateways = gateways => (gateways || []).concat()
+        .sort((a, b) => hasDiscount(b) - hasDiscount(a))
+      return this.paymentOptions
+        .map(option => ({ ...option, payment_gateways: sortGateways(option.payment_gateways) }))
+        .sort((a, b) => hasDiscount(b.payment_gateways[0] || {}) - hasDiscount(a.payment_gateways[0] || {}))
     },
 
     lhCountdown () {
