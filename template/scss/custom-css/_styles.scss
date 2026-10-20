@@ -2018,3 +2018,84 @@ body .footer.lh-foot {
 body > iframe[src*="passport.e-com.plus"] {
   display: block;
 }
+
+// ---------------------------------------------------------------------------
+// Ritmo do topo da home: slide afastado do menu, com cantos arredondados, e
+// slide / vantagens / categorias com as mesmas bordas do conteúdo (.container)
+// ---------------------------------------------------------------------------
+
+body .banner-slider {
+  // mesma largura do conteúdo do .container (largura máxima menos 15px de cada lado)
+  width: calc(100% - 30px);
+  margin: 22px auto 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 10px 30px rgba(0, 0, 0, .06);
+
+  @media (min-width: 576px) {
+    max-width: 510px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 690px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 930px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1250px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1290px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-top: 12px;
+    border-radius: 14px;
+  }
+}
+
+body .info-bar.lh-perks {
+  max-width: none;
+  padding: 24px 0 0;
+
+  @media (max-width: 575.98px) {
+    padding-top: 16px;
+  }
+}
+
+// seção do mosaico de categorias logo abaixo das vantagens
+body .custom-html:has(.lh-cats) {
+  margin-top: 32px !important;
+
+  @media (max-width: 575.98px) {
+    margin-top: 20px !important;
+  }
+}
+
+// a imagem do slide em bloco: o line-height do CSS do painel deixava uma faixa vazia embaixo
+body .banner-slider img {
+  display: block;
+  vertical-align: middle;
+}
+
+// o tema calcula a altura do slide pela largura da janela (100vw); com o slide na largura do
+// conteúdo isso sobrava espaço embaixo. Usa a proporção da própria imagem (mesmas variáveis do tema).
+body .banner-slider {
+  height: auto;
+  max-height: none;
+  aspect-ratio: calc(1 / var(--banner-aspect-ratio, .232));
+
+  @media (max-width: 575.98px) {
+    aspect-ratio: calc(1 / var(--banner-aspect-ratio-mobile, var(--banner-aspect-ratio, .521)));
+  }
+
+  .banner,
+  .banner a {
+    display: block;
+    line-height: 0;
+  }
+}
