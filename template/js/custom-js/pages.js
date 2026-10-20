@@ -227,3 +227,52 @@ if ($lhSearch) {
     tick()
   }
 }
+
+// ---------------------------------------------------------------------------
+// Descrição "landing" de produto (.lhx no body_html): revela as seções ao rolar,
+// anima os números e o botão final leva ao bloco de compra
+// ---------------------------------------------------------------------------
+
+const $lhx = document.querySelector('.lhx')
+if ($lhx) {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const formatNumber = ($el, n) => {
+    const dec = Number($el.dataset.dec || 0)
+    return n.toLocaleString('pt-BR', { minimumFractionDigits: dec, maximumFractionDigits: dec }) +
+      ($el.dataset.suf || '')
+  }
+  const countUp = $el => {
+    const end = parseFloat($el.dataset.count)
+    let t0 = null
+    const step = t => {
+      if (!t0) t0 = t
+      const p = Math.min(1, (t - t0) / 1400)
+      $el.textContent = formatNumber($el, end * (1 - Math.pow(1 - p, 3)))
+      if (p < 1) window.requestAnimationFrame(step)
+    }
+    window.requestAnimationFrame(step)
+  }
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    const io = new window.IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('on')
+        entry.target.querySelectorAll('[data-count]').forEach(countUp)
+        io.unobserve(entry.target)
+      })
+    }, { threshold: 0.18 })
+    $lhx.querySelectorAll('.rv').forEach($el => {
+      $el.classList.add('rv-wait')
+      io.observe($el)
+    })
+  }
+  $lhx.querySelectorAll('[data-lh-buy]').forEach($a => {
+    $a.addEventListener('click', e => {
+      const $target = document.querySelector('.lh-sp') || document.querySelector('#product')
+      if ($target) {
+        e.preventDefault()
+        $target.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }
+    })
+  })
+}
