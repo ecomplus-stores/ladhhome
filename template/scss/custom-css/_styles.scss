@@ -720,7 +720,6 @@ body .lh-card .product-card__prices.lh-prices {
 
   &__card {
     margin: 4px 0 2px;
-    min-height: 2.7em;
     color: #6b6b73;
     font-size: 13px;
     line-height: 1.35;
@@ -1009,5 +1008,211 @@ body .product-block .product__buy {
 
   .btn-primary {
     height: 100%;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Ajustes visuais (para ficar igual às prévias)
+// ---------------------------------------------------------------------------
+
+// pesos dos textos: o corpo do site é 300 (CSS do painel), então os textos dos
+// cards e da página do produto definem o peso explicitamente
+body .lh-card {
+  .lh-prices__card {
+    font-weight: 400;
+  }
+
+  .lh-prices__value {
+    font-weight: 600;
+  }
+
+  .lh-prices__compare {
+    font-weight: 400;
+  }
+
+  .lh-card__buy .btn {
+    font-weight: 500;
+  }
+}
+
+.lh-pprices {
+  &__value {
+    font-weight: 600;
+  }
+
+  &__card,
+  &__compare {
+    font-weight: 400;
+  }
+}
+
+.lh-trust span,
+.lh-deliv span {
+  font-weight: 400;
+}
+
+// grades de produtos (categoria, busca, ofertas): espaço entre as linhas
+// e cards da mesma linha com a mesma altura
+body .search-engine__retail > .row > [class*="col-"] {
+  display: flex;
+  margin-bottom: 22px;
+
+  > .product-item,
+  > div {
+    width: 100%;
+  }
+}
+
+body .search-engine__retail .product-item,
+body .products-carousel .product-item {
+  height: 100%;
+}
+
+// espaço para a sombra e o movimento do card no hover dentro dos carrosséis
+body .products-carousel .glide__track {
+  padding: 6px 2px 14px;
+}
+
+// seletor de quantidade da página do produto: caixa arredondada com − e +
+body .product-block .product__buy {
+  .quantity-selector__btn-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 7px;
+    background: #fff;
+
+    > .btn,
+    > .quantity-selector__input {
+      flex: none;
+      max-width: none;
+    }
+
+    > .btn {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      padding: 0;
+      border-radius: 8px;
+      background: #f1f1f4;
+      color: #222;
+      box-shadow: none;
+      text-decoration: none;
+
+      i {
+        display: none;
+      }
+
+      &::before {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      &:first-child::before {
+        content: "\2212";
+      }
+
+      &:last-child::before {
+        content: "+";
+      }
+
+      &:hover:not(:disabled) {
+        background: #e4e4ea;
+      }
+
+      &:disabled {
+        opacity: .45;
+      }
+    }
+
+    > .quantity-selector__input {
+      width: 34px;
+      height: auto;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #222;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Visual "clean" da prévia: fundo cinza claro, cards brancos suaves e conteúdo mais largo
+// ---------------------------------------------------------------------------
+$lh-page-bg: #f3f4f6;
+
+body {
+  background-color: $lh-page-bg;
+}
+
+// conteúdo mais largo no computador (antes 1140px), cards de vitrine ficam mais largos
+@media (min-width: 1200px) {
+  body .container {
+    max-width: 1280px;
+  }
+}
+
+// itens de carrossel sem o fundo branco do CSS do painel, para o cinza aparecer entre os cards
+body .products-carousel .products-carousel__item {
+  background-color: transparent;
+  padding: 0 9px;
+}
+
+body .search-engine__retail > .row {
+  margin-left: -9px;
+  margin-right: -9px;
+
+  > [class*="col-"] {
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-bottom: 18px;
+  }
+}
+
+// card: branco, borda bem clara, cantos 12px, sombra só no hover
+body .product-card.lh-card {
+  border-color: #ececef;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: none;
+}
+
+// página do produto: bloco branco arredondado sobre o fundo cinza, como na prévia
+body .product-block > .container {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+
+  @media (max-width: 767.98px) {
+    border-radius: 0;
+    padding: 16px;
+  }
+}
+
+// vitrines: sem a caixa branca em volta e com menos recuo lateral (cards mais largos)
+body .products-carousel {
+  background-color: transparent;
+
+  @media (min-width: 992px) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body .container {
+    max-width: 1320px;
+  }
+}
+
+// a vitrine usa a largura máxima do tema (80rem); acompanha o conteúdo mais largo
+@media (min-width: 1400px) {
+  body .products-carousel {
+    max-width: 1320px;
   }
 }
