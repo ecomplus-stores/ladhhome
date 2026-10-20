@@ -14,7 +14,9 @@ export default {
   data () {
     return {
       ...TheProduct.data.call(this),
-      lhNow: Date.now()
+      lhNow: Date.now(),
+      // aba aberta no bloco de frete e pagamento: 'ship' ou 'pay'
+      lhTab: 'ship'
     }
   },
 

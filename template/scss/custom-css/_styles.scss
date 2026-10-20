@@ -2133,3 +2133,330 @@ body .lh-header.is-compact {
     transition: none;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Página do produto: abas Frete e prazo | Pagamento (TheProduct.html, .lh-sp)
+// ---------------------------------------------------------------------------
+
+body .lh-sp {
+  border: 1px solid #ececef;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 16px 0 14px;
+  background: #fff;
+}
+
+body .lh-sp__tabs {
+  display: flex;
+  background: #f6f6f7;
+}
+
+body .lh-sp__tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  padding: 13px 10px;
+  font: 600 15px 'Jost', sans-serif;
+  color: #666;
+  cursor: pointer;
+
+  &.is-on {
+    background: #fff;
+    color: #1d1d1f;
+    border-bottom-color: #c40000;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #c40000;
+    outline-offset: -2px;
+  }
+}
+
+body .lh-sp__panel {
+  padding: 16px;
+}
+
+// calculadora de frete do tema com o visual do preview
+body .lh-sp .shipping-calculator {
+  label {
+    display: none;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .input-group {
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .shipping-calculator__input {
+    height: 46px;
+    border: 1.5px solid #d9d9de;
+    border-radius: 10px !important;
+    font: 500 16px 'Jost', sans-serif;
+    padding-left: 14px;
+
+    &:focus {
+      border-color: #1d1d1f;
+      box-shadow: none;
+    }
+  }
+
+  .input-group-append .btn {
+    height: 46px;
+    border: 0;
+    border-radius: 10px !important;
+    background: #131921;
+    color: #fff;
+    padding: 0 20px;
+    font: 600 15px 'Jost', sans-serif;
+
+    i {
+      display: none;
+    }
+
+    &::after {
+      content: "Calcular";
+    }
+
+    &:hover {
+      background: #2a3140;
+    }
+  }
+
+  .shipping-calculator__services {
+    margin-top: 10px;
+
+    .list-group {
+      display: grid;
+      gap: 8px;
+    }
+
+    .list-group-item {
+      border: 1px solid #eee !important;
+      border-radius: 10px !important;
+      padding: 10px 12px;
+      font-size: 14.5px;
+
+      &:first-of-type {
+        border-color: #bfe6c9 !important;
+        background: #f3fbf5;
+      }
+
+      &.active {
+        border-color: #1f9d3e !important;
+        background: #ecf8ef;
+        color: #14532d;
+      }
+    }
+  }
+}
+
+// formas de pagamento sempre abertas na aba Pagamento
+body .lh-sp__pay {
+  display: grid;
+  gap: 10px;
+
+  .payment-option {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin: 0;
+  }
+
+  .payment-option__label {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .payment-option__price {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .payment-option__discount {
+    background: #e3f6f4;
+    color: #0b6b62;
+    font-weight: 600;
+  }
+
+  .payment-option__installment {
+    font-size: 13.5px;
+    color: #555;
+    margin: 6px 0 0;
+  }
+}
+
+// favoritar e compartilhar como botões discretos no final
+body .lh-acts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 14px;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 !important;
+  }
+
+  .product__favorite,
+  .share {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #e3e3e7;
+    border-radius: 999px;
+    background: #fff;
+    padding: 6px 12px !important;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #1d1d1f;
+    line-height: 1.2;
+
+    &:hover {
+      border-color: #c40000;
+    }
+  }
+
+  .share {
+    width: 36px;
+    height: 36px;
+    padding: 0 !important;
+    justify-content: center;
+
+    span {
+      display: none !important;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Caminho (breadcrumb) em pílula; no celular vira "Voltar para <categoria>"
+// ---------------------------------------------------------------------------
+
+body .breadcrumb.lh-bc {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 16px 6px 6px;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    color: #555;
+    white-space: nowrap;
+
+    a {
+      color: #555;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+
+      &:hover {
+        color: #c40000;
+        text-decoration: none;
+      }
+    }
+
+    + .breadcrumb-item {
+      padding-left: 6px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 7px;
+        height: 7px;
+        margin: 0 10px 0 4px;
+        padding: 0;
+        border-top: 1.5px solid #bbb;
+        border-right: 1.5px solid #bbb;
+        transform: rotate(45deg);
+      }
+    }
+
+    &.active {
+      color: #1d1d1f;
+      font-weight: 500;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      max-width: 420px;
+    }
+  }
+
+  .lh-bc__home {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    justify-content: center;
+    color: #555;
+  }
+
+  .lh-bc__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+
+    .lh-ico {
+      transform: rotate(180deg);
+      color: #c40000;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 7px 14px 7px 8px;
+
+    .breadcrumb-item + .breadcrumb-item {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .breadcrumb-item a {
+      color: #444;
+      font-size: 14.5px;
+    }
+  }
+}
+
+// frete: campo de CEP e resultados ocupando a largura toda da aba
+body .lh-sp .shipping-calculator {
+  .input-group > .shipping-calculator__input {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .shipping-calculator__services,
+  .shipping-calculator__services > span,
+  .shipping-calculator__services .list-group,
+  .shipping-calculator__services .list-group-item {
+    width: 100%;
+    max-width: none;
+  }
+
+  .shipping-calculator__option {
+    display: block;
+    width: 100%;
+  }
+}
