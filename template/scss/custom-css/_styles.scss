@@ -583,3 +583,179 @@ body .lh-header .lh-cep-strip {
     padding: 2px;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Card de produto (template/js/custom-js/components/ProductCard.html, classes lh-card/lh-prices)
+// Estilo "marketplace": valor no Pix como preço principal, selo de desconto,
+// "Chega hoje em SP", "Você economiza" e botão Comprar verde com cesta.
+// ---------------------------------------------------------------------------
+$lh-pix: #1f8f84;
+$lh-buy: #1f9d3a;
+
+body .product-card.lh-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ececef;
+  border-radius: 12px;
+  padding: 12px;
+  transition: transform .18s, box-shadow .18s;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, .12);
+    }
+  }
+
+  > section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .product-card__pictures {
+    border-bottom: 0;
+  }
+
+  .product-card__name {
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #222;
+    margin: 6px 0 4px;
+    min-height: 2.7em;
+    --max-lines: 2;
+  }
+
+  .product-card__favorite {
+    right: 8px;
+    top: 8px;
+  }
+}
+
+.lh-card__tags {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 6px;
+  min-height: 22px;
+  margin-top: 8px;
+}
+
+.lh-card__off {
+  background: #c40000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.lh-card__today {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #e8f5ec;
+  color: #17843a;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+body .lh-card .product-card__prices.lh-prices {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 13px;
+  text-align: left;
+}
+
+.lh-prices {
+  &__compare {
+    color: #9a9aa2;
+    font-size: 13px;
+
+    &--empty {
+      visibility: hidden;
+    }
+  }
+
+  &__main {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #16181d;
+  }
+
+  &__from {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b6b73;
+  }
+
+  &__pix {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: $lh-pix;
+
+    &--empty {
+      visibility: hidden;
+    }
+
+    svg {
+      color: #32bcad;
+    }
+  }
+
+  &__card {
+    margin: 4px 0 2px;
+    min-height: 2.7em;
+    color: #6b6b73;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  &__save {
+    margin: 0 0 10px;
+    color: #17843a;
+    font-size: 12.5px;
+    font-weight: 500;
+
+    &--empty {
+      visibility: hidden;
+    }
+  }
+}
+
+body .lh-card .product-card__buy.lh-card__buy {
+  margin-top: auto;
+  opacity: 1;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 42px;
+    border: 0;
+    border-radius: 10px;
+    background: $lh-buy;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: none;
+
+    &:hover,
+    &:focus {
+      background: #17842f;
+      color: #fff;
+    }
+  }
+}
