@@ -114,3 +114,35 @@ if ($deptPanel) {
     $item.addEventListener('focus', () => activate($item.dataset.lhDept))
   })
 }
+
+// ---------------------------------------------------------------------------
+// Faixa de vantagens: entrega no mesmo dia com contagem regressiva
+// (mesma regra da página do produto: dia útil até 12h55 chega hoje)
+// ---------------------------------------------------------------------------
+
+const $delivery = document.querySelector('[data-lh-delivery]')
+if ($delivery) {
+  const $title = $delivery.querySelector('[data-lh-delivery-title]')
+  const $text = $delivery.querySelector('[data-lh-delivery-text]')
+  const names = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado']
+  const update = () => {
+    const now = new Date()
+    const day = now.getDay()
+    const cutoff = new Date(now)
+    cutoff.setHours(12, 55, 0, 0)
+    if (day >= 1 && day <= 5 && now < cutoff) {
+      const min = Math.max(0, Math.floor((cutoff - now) / 60000))
+      $title.textContent = 'Receba hoje em São Paulo'
+      $text.innerHTML = `Peça até 12h55 · faltam <em>${Math.floor(min / 60)}h ${min % 60}min</em>`
+      return
+    }
+    const target = new Date(cutoff)
+    target.setDate(target.getDate() + (day === 6 ? 2 : 1))
+    $title.textContent = day === 6 || day === 5
+      ? `Receba ${names[target.getDay()]} em São Paulo`
+      : 'Receba amanhã em São Paulo'
+    $text.textContent = 'Peça agora e consulte as regiões atendidas'
+  }
+  update()
+  setInterval(update, 30000)
+}
