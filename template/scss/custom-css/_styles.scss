@@ -2460,3 +2460,157 @@ body .lh-sp .shipping-calculator {
     width: 100%;
   }
 }
+
+// caminho mais compacto (menos espaço acima/abaixo) e setas alinhadas em todos os itens
+body .breadcrumb.lh-bc {
+  margin: 10px 0 12px !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 13.5px;
+
+  .lh-bc__home {
+    width: 26px;
+    height: 26px;
+  }
+
+  .breadcrumb-item.active {
+    max-width: none;
+    overflow: visible;
+  }
+
+  .lh-bc__cur {
+    display: block;
+    max-width: 420px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @media (min-width: 768px) {
+    .breadcrumb-item.d-md-block {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    margin-top: 0;
+    vertical-align: 0;
+  }
+}
+
+// a seção do produto logo abaixo do caminho, sem o espaço extra do tema
+body .product-block,
+body #product-block {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+// ---------------------------------------------------------------------------
+// Aba Pagamento no visual do preview (LhPaymentOption.vue)
+// ---------------------------------------------------------------------------
+
+body .lh-sp__pay {
+  gap: 6px;
+}
+
+body .lh-sp__gateway {
+  display: grid;
+  gap: 6px;
+}
+
+body .lh-pay {
+  border-top: 1px solid #f0f0f2;
+  padding: 10px 0 4px;
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &--pix {
+    background: #eefaf8;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+}
+
+body .lh-pay__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+body .lh-pay__ic {
+  flex: none;
+  color: #555;
+  display: grid;
+  place-items: center;
+}
+
+body .lh-pay--pix .lh-pay__ic {
+  color: #32bcad;
+}
+
+body .lh-pay__tx {
+  flex: 1;
+  min-width: 0;
+
+  b {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  small {
+    font-size: 13px;
+    color: #666;
+  }
+}
+
+body .lh-pay__price {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  small {
+    display: block;
+    color: #0b6b62;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+body .lh-pay__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: none;
+  padding: 8px 0 4px;
+  font: 600 14px 'Jost', sans-serif;
+  color: #c40000;
+  cursor: pointer;
+}
+
+body .lh-pay__list {
+  list-style: none;
+  margin: 4px 0 6px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 18px;
+  font-size: 13.5px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #eee;
+    padding: 4px 0;
+  }
+
+  @media (max-width: 575.98px) {
+    grid-template-columns: 1fr;
+  }
+}
