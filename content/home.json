@@ -10,26 +10,50 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-potes-hermeticos.jpg",
-          "mobile_img": "/img/uploads/ventilador-banner-ladh-home-preto-mobile.jpg",
-          "link": "/ventilador-de-coluna-turbo-6-ps-40cm-de-dimetro-110v/220",
-          "alt": "Ventilador de coluna turbo 40cm com entrega no mesmo dia"
+          "img": "/img/uploads/banner-potes-hermeticos-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-potes-hermeticos-ladh-home-2026-mobile.jpg",
+          "link": "/potes-hermeticos",
+          "alt": "Potes de vidro herméticos com tampa de bambu para organizar a despensa"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-tacas-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-copos-e-tacas-ladh-home-mobile.jpg",
-          "link": "/tacas",
-          "alt": "Taças e copos de vidro"
+          "img": "/img/uploads/banner-cadeados-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-2026-mobile.jpg",
+          "link": "/cadeados",
+          "alt": "Cadeados Tetra de latão maciço de 32mm a 63mm com entrega hoje em SP"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-vinho-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-vinho-ladh-home-mobile.jpg",
-          "link": "/acessorios-para-vinho",
-          "alt": "Acessórios para vinho: decanter e aerador"
+          "img": "/img/uploads/banner-decanter-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-decanter-ladh-home-2026-mobile.jpg",
+          "link": "/decanter-de-vinho-decantador-vidro-recipiente-servir-1-litro",
+          "alt": "Decanter de vinho de vidro 1 litro"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-tapete-airfryer-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-tapete-airfryer-ladh-home-2026-mobile.jpg",
+          "link": "/acessorios-para-airfryer",
+          "alt": "Tapete de silicone reutilizável para air fryer"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-jarras-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-jarras-ladh-home-2026-mobile.jpg",
+          "link": "/jarras",
+          "alt": "Jarras de vidro e jogos de copos para suco e água"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-entrega-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-entrega-ladh-home-2026-mobile.jpg",
+          "link": "/pages/entregas-no-mesmo-dia",
+          "alt": "Receba hoje em São Paulo: entrega no mesmo dia"
         },
         {
           "start": "",
@@ -38,22 +62,6 @@
           "mobile_img": "/img/uploads/banner-ofertas-ladh-home2-mobile.jpg",
           "link": "/ofertas",
           "alt": "Ofertas Ladh Home"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-jarras-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-jarras-ladh-home-mobile.jpg",
-          "link": "/jarras",
-          "alt": "Jarras de vidro para suco e água"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-cadeados-ladh-home.jpg",
-          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.jpg",
-          "link": "/cadeados",
-          "alt": "Cadeados de latão e kits"
         }
       ]
     },
@@ -123,7 +131,7 @@
         },
         {
           "img": "/img/uploads/porta-mantimentos.png",
-          "link": "/potes-para-alimentos",
+          "link": "/potes-hermeticos",
           "alt": "Potes para guardar alimentos"
         },
         {
