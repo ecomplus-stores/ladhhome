@@ -39,8 +39,8 @@ export default {
       <small v-if="hasVariedPrices" class="lh-pprices__from">{{ i19asOf }}</small>
       <span class="lh-pprices__value">{{ formatMoney(hasPaymentDiscount ? priceWithDiscount : price) }}</span>
       <span v-if="hasPaymentDiscount" class="lh-pprices__pix">
-        <pix-logo v-if="isPix" :size="20"/>
         {{ isPix ? 'no Pix' : discountLabel }}
+        <pix-logo v-if="isPix" :size="20"/>
       </span>
     </div>
 
