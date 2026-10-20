@@ -1927,3 +1927,94 @@ body .footer.lh-foot {
     }
   }
 }
+
+// faixa final do rodapé: copyright + créditos (layout Orbara e plataforma E-Com Plus)
+body .footer.lh-foot {
+  margin-bottom: 0;
+
+  .lh-foot__legal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .lh-foot__credits {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex: none;
+  }
+
+  .lh-foot__dev,
+  .lh-foot__platform {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #8b929c;
+
+    small {
+      font-size: 12px;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .lh-foot__dev b {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .01em;
+    color: #fff;
+  }
+
+  .lh-foot__platform img {
+    height: 18px;
+    width: auto;
+    opacity: .8;
+  }
+
+  .lh-foot__platform:hover img {
+    opacity: 1;
+  }
+
+  .lh-orbara {
+    overflow: visible;
+  }
+
+  .lh-orbara__orbit {
+    transform-origin: 12px 12px;
+    animation: lh-orbit 6s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lh-orbara__orbit {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lh-foot__legal .container {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .lh-foot__credits {
+      gap: 16px;
+    }
+  }
+}
+
+@keyframes lh-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// o iframe oculto do login (passport) entra como inline no fim do body e criava uma linha vazia abaixo do rodapé
+body > iframe[src*="passport.e-com.plus"] {
+  display: block;
+}
