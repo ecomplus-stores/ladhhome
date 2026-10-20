@@ -54,14 +54,6 @@
           "mobile_img": "/img/uploads/banner-entrega-ladh-home-2026-mobile.jpg",
           "link": "/pages/entregas-no-mesmo-dia",
           "alt": "Receba hoje em São Paulo: entrega no mesmo dia"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-ofertas-ladh-home2.jpg",
-          "mobile_img": "/img/uploads/banner-ofertas-ladh-home2-mobile.jpg",
-          "link": "/ofertas",
-          "alt": "Ofertas Ladh Home"
         }
       ]
     },
