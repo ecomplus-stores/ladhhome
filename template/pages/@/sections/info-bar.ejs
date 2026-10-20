@@ -1,43 +1,50 @@
 <%
+// Faixa de vantagens da Ladh Home: entrega no mesmo dia em destaque (com contagem regressiva
+// atualizada em custom-js/pages.js) e os outros diferenciais como selos.
 const info = _.cms('info')
-const barCols = []
-;[
-  ['shipping', 'shipping-fast'],
-  ['installments', 'credit-card'],
-  ['exchange', 'exchange'],
-  ['promo', 'percent']
-].forEach(([prop, icon]) => {
-  if (info[prop] && info[prop].show) {
-    const { link, title, text } = info[prop]
-    barCols.push({ link, title, text, icon })
-  }
-})
+const show = prop => info[prop] && info[prop].show
+const pixLogo = '<svg class="lh-ico" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.283 18.36a3.505 3.505 0 0 0 2.493-1.032l3.6-3.6a.684.684 0 0 1 .946 0l3.613 3.613a3.504 3.504 0 0 0 2.493 1.032h.71l-4.56 4.56a3.647 3.647 0 0 1-5.156 0L4.85 18.36ZM18.428 5.627a3.505 3.505 0 0 0-2.493 1.032l-3.613 3.614a.67.67 0 0 1-.946 0l-3.6-3.6A3.505 3.505 0 0 0 5.283 5.64h-.434l4.573-4.572a3.646 3.646 0 0 1 5.156 0l4.559 4.559ZM1.068 9.422 3.79 6.699h1.492a2.483 2.483 0 0 1 1.744.722l3.6 3.6a1.73 1.73 0 0 0 2.443 0l3.614-3.613a2.482 2.482 0 0 1 1.744-.723h1.767l2.737 2.737a3.646 3.646 0 0 1 0 5.156l-2.736 2.736h-1.768a2.482 2.482 0 0 1-1.744-.722l-3.613-3.613a1.77 1.77 0 0 0-2.444 0l-3.6 3.6a2.483 2.483 0 0 1-1.744.722H3.791l-2.723-2.723a3.646 3.646 0 0 1 0-5.156"/></svg>'
 %>
 
-<% if (barCols.length) { %>
-  <section class="info-bar">
-    <div class="container">
-      <div class="info-bar__nav row">
-        <% barCols.forEach(({ link, icon, title, text }) => { %>
-          <div class="col-auto col-sm-6 col-lg">
-            <a class="info-bar__item" href="<%= link || 'javascript:;' %>">
-              <span class="rounded-icon">
-                <i class="i-<%= icon %>"></i>
-              </span>
-              <div class="ml-2 ml-md-3">
-                <% if(title) { %>
-                  <div class="info-bar__title">
-                    <%= title %>
-                  </div>
-                <% } %>
-                <div class="info-bar__text">
-                  <%= text %>
-                </div>
-              </div>
-            </a>
+<section class="info-bar lh-perks">
+  <div class="container">
+    <div class="lh-perks__grid">
+      <% if (show('shipping')) { %>
+        <div class="lh-perks__hero" data-lh-delivery>
+          <span class="lh-perks__hero-ic">
+            <%- await include('@/layout/inc/lh-icon', { name: 'truck-delivery', size: 26 }) %>
+          </span>
+          <div class="lh-perks__hero-tx">
+            <b data-lh-delivery-title>Receba hoje em São Paulo</b>
+            <small data-lh-delivery-text>Pedidos até 12h55 em dias úteis</small>
           </div>
-        <% }) %>
+          <a class="lh-perks__hero-btn" href="<%= info.shipping.link || '/pages/entregas-no-mesmo-dia' %>">
+            Ver regiões
+            <%- await include('@/layout/inc/lh-icon', { name: 'arrow-right', size: 16 }) %>
+          </a>
+        </div>
+      <% } %>
+      <div class="lh-perks__chips">
+        <% if (show('promo')) { %>
+          <span class="lh-perks__chip lh-perks__chip--pix"><%- pixLogo %> <span><b>10% off</b> no Pix</span></span>
+        <% } %>
+        <% if (show('installments')) { %>
+          <span class="lh-perks__chip">
+            <%- await include('@/layout/inc/lh-icon', { name: 'credit-card', size: 22 }) %>
+            <span><b>3x</b> sem juros</span>
+          </span>
+        <% } %>
+        <% if (show('exchange')) { %>
+          <span class="lh-perks__chip">
+            <%- await include('@/layout/inc/lh-icon', { name: 'rotate-clockwise', size: 22 }) %>
+            <span>Troca em <b>7 dias</b></span>
+          </span>
+        <% } %>
+        <span class="lh-perks__chip">
+          <%- await include('@/layout/inc/lh-icon', { name: 'shield-check', size: 22 }) %>
+          <span>Compra <b>segura</b></span>
+        </span>
       </div>
     </div>
-  </section>
-<% } %>
+  </div>
+</section>
