@@ -2726,3 +2726,14 @@ body .lhx .hc .tx{padding:26px 20px}
 
 // a descrição ocupa a largura do conteúdo da página
 body .html-clearfix .lhx{max-width:none;margin:0}
+
+// descrição landing: o .html-clearfix do tema tem overflow:auto e virava uma caixa com rolagem
+// própria, que prendia o dedo no celular. flow-root mantém o clearfix sem criar rolagem.
+body .html-clearfix:has(.lhx) {
+  overflow: visible;
+  display: flow-root;
+}
+
+body .lhx {
+  overflow-x: clip;
+}
