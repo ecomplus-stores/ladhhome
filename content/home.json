@@ -156,7 +156,8 @@
       "collection_ids": [
         "6ac8fbf5568e83312544d9f4:categories:Potes Herméticos:/potes-hermeticos"
       ],
-      "shelfs_title": "Potes Hermeticos"
+      "shelfs_title": "Potes Hermeticos",
+      "sort": "highest_price"
     }
   ]
 }
