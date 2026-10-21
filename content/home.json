@@ -141,14 +141,6 @@
       "img": "/img/uploads/banner-desconto-topo-novo.gif"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "649de87d5e606903704dde74:categories:Casa e Construção:/casa-e-construcao",
-      "title": "Mais Vendidos em Casa e Construção"
-    },
-    {
       "type": "shelfs-nav",
       "shuffle": false,
       "limit": 8,
@@ -158,6 +150,14 @@
       ],
       "shelfs_title": "Potes Hermeticos",
       "sort": "highest_price"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "649de87d5e606903704dde74:categories:Casa e Construção:/casa-e-construcao",
+      "title": "Mais Vendidos em Casa e Construção"
     }
   ]
 }
