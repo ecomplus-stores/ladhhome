@@ -7,13 +7,15 @@ const breadcrumbs = opt.breadcrumbs && opt.breadcrumbs.length
   }])
 
 if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
+  const homeIcon = await include('@/layout/inc/lh-icon', { name: 'home', size: 16 })
+  const backIcon = await include('@/layout/inc/lh-icon', { name: 'chevron-right', size: 16 })
   %>
   <div class="container">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb my-2 my-sm-3<%= breadcrumbs.length < 2 ? ' d-none d-md-flex' : '' %>">
+      <ol class="breadcrumb lh-bc my-2 my-sm-3<%= breadcrumbs.length < 2 ? ' d-none d-md-flex' : '' %>">
         <li class="breadcrumb-item d-none d-md-block">
-          <a href="/">
-            <i class="i-home"></i>
+          <a href="/" class="lh-bc__home" aria-label="Início">
+            <%- homeIcon %>
           </a>
         </li>
         <% breadcrumbs.forEach(({ name, link }, index) => { %>
@@ -26,12 +28,18 @@ if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
               <% } %>
             >
               <a href="<%= link %>">
+                <% if (index === breadcrumbs.length - 2) { %>
+                  <span class="lh-bc__back d-md-none">
+                    <%- backIcon %>
+                    Voltar para
+                  </span>
+                <% } %>
                 <%= name %>
               </a>
             </li>
           <% } else { %>
             <li class="breadcrumb-item d-none d-md-block active" aria-current="page">
-              <%= name %>
+              <span class="lh-bc__cur"><%= name %></span>
             </li>
           <% } %>
         <% }) %>

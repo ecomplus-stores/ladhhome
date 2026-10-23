@@ -1,59 +1,59 @@
 {
-  "meta_title": "Ladh Home | Utilidades Domésticas com Entrega no Mesmo Dia em SP",
-  "meta_description": "Utilidades domésticas, cozinha, casa e construção, ferramentas e eletrônicos. Receba no mesmo dia em São Paulo e parcele em até 3x sem juros.",
+  "meta_title": "Ladh Home – Utilidades para Casa, Cozinha e Construção",
+  "meta_description": "Cadeados, resistências de chuveiro, utensílios de cozinha, lâmpadas LED e ferramentas com entrega no mesmo dia em SP, 10% off no Pix e até 3x sem juros.",
   "sections": [
     {
       "type": "banner-slider",
       "autoplay": 9000,
-      "full_width": true,
+      "full_width": false,
       "slides": [
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-potes-hermeticos.jpg",
-          "mobile_img": "/img/uploads/banner-potes-hermeticos-mobile.webp",
-          "link": "/potes-para-alimentos",
-          "alt": "Organizadores para sua cozinha: potes herméticos a partir de R$ 54,90"
+          "img": "/img/uploads/banner-potes-hermeticos-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-potes-hermeticos-ladh-home-2026-mobile.jpg",
+          "link": "/potes-hermeticos",
+          "alt": "Potes de vidro herméticos com tampa de bambu para organizar a despensa"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-tacas-ladh-home.webp",
-          "mobile_img": "/img/uploads/banner-copos-e-tacas-ladh-home-mobile.webp",
-          "link": "/tacas",
-          "alt": "Taças para sua cozinha com entrega rápida em São Paulo"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-vinho-ladh-home.webp",
-          "mobile_img": "/img/uploads/banner-vinho-ladh-home-mobile.webp",
-          "link": "/kit-vinho",
-          "alt": "Acessórios para vinho: kit sommelier, decanter e aerador com entrega rápida em São Paulo"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-ofertas-ladh-home2.webp",
-          "mobile_img": "/img/uploads/banner-ofertas-ladh-home2-mobile.webp",
-          "link": "/ofertas",
-          "alt": "Ofertas da semana em utilidades domésticas"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-jarras-ladh-home.webp",
-          "mobile_img": "/img/uploads/banner-jarras-ladh-home-mobile.webp",
-          "link": "/jarras",
-          "alt": "Jarras de vidro com design moderno e funcional"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-cadeados-ladh-home.webp",
-          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-mobile.webp",
+          "img": "/img/uploads/banner-cadeados-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-cadeados-ladh-home-2026-mobile.jpg",
           "link": "/cadeados",
-          "alt": "Cadeados de alta qualidade para proteger seus bens"
+          "alt": "Cadeados Tetra de latão maciço de 32mm a 63mm com entrega hoje em SP"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-decanter-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-decanter-ladh-home-2026-mobile.jpg",
+          "link": "/decanter-de-vinho-decantador-vidro-recipiente-servir-1-litro",
+          "alt": "Decanter de vinho de vidro 1 litro"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-tapete-airfryer-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-tapete-airfryer-ladh-home-2026-mobile.jpg",
+          "link": "/acessorios-para-airfryer",
+          "alt": "Tapete de silicone reutilizável para air fryer"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-jarras-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-jarras-ladh-home-2026-mobile.jpg",
+          "link": "/jarras",
+          "alt": "Jarras de vidro e jogos de copos para suco e água"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-entrega-ladh-home-2026.jpg",
+          "mobile_img": "/img/uploads/banner-entrega-ladh-home-2026-mobile.jpg",
+          "link": "/pages/entregas-no-mesmo-dia",
+          "alt": "Receba hoje em São Paulo: entrega no mesmo dia"
         }
       ]
     },
@@ -62,19 +62,8 @@
       "enabled": true
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner-home-categorias.webp",
-          "link": "/cozinha",
-          "alt": "Diversos utensílios de cozinha"
-        },
-        {
-          "img": "/img/uploads/banner-home-jardim.webp",
-          "link": "/jardinagem",
-          "alt": "Ferramentas e acessórios para seu jardim"
-        }
-      ]
+      "type": "custom-html",
+      "html": "<h1 class=\"home-h1 sr-only\">Utilidades para casa, cozinha e construção com entrega hoje em SP</h1><div class=\"lh-cats\"><a class=\"lh-cats__t lh-cats__t--big\" href=\"/cozinha\"><img src=\"/img/uploads/categoria-cozinha-ladh-home.jpg\" alt=\"Potes de vidro herméticos com tampa de bambu na bancada da cozinha\" loading=\"lazy\" width=\"1100\" height=\"467\"><div class=\"lh-cats__tx\"><small>Cozinha</small><b>Tudo para uma cozinha organizada</b><span>Potes, bowls, xícaras e utensílios</span><em>Ver cozinha <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 18l6-6M13 6l6 6\"/></svg></em></div></a><a class=\"lh-cats__t lh-cats__t--dark\" href=\"/cadeados\"><img src=\"/img/uploads/categoria-cadeados-ladh-home.jpg\" alt=\"Cadeados de latão Tetra em corrente de portão\" loading=\"lazy\" width=\"1100\" height=\"467\"><div class=\"lh-cats__tx\"><small>Casa e construção</small><b>Cadeados e segurança</b><em>Ver cadeados <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 18l6-6M13 6l6 6\"/></svg></em></div></a><a class=\"lh-cats__t lh-cats__t--dark\" href=\"/acessorios-para-vinho\"><img src=\"/img/uploads/categoria-vinho-ladh-home.jpg\" alt=\"Decanter de vidro servindo vinho tinto\" loading=\"lazy\" width=\"1100\" height=\"467\"><div class=\"lh-cats__tx\"><small>Vinho e bar</small><b>Decanter e aerador</b><em>Ver <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 18l6-6M13 6l6 6\"/></svg></em></div></a><a class=\"lh-cats__t\" href=\"/acessorios-para-airfryer\"><img src=\"/img/uploads/categoria-airfryer-ladh-home.jpg\" alt=\"Tapete de silicone vermelho no cesto da air fryer\" loading=\"lazy\" width=\"1100\" height=\"467\"><div class=\"lh-cats__tx\"><small>Air fryer</small><b>Tapetes e acessórios</b><em>Ver <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 18l6-6M13 6l6 6\"/></svg></em></div></a><a class=\"lh-cats__t\" href=\"/jarras\"><img src=\"/img/uploads/categoria-jarras-ladh-home.jpg\" alt=\"Jarra de vidro com limonada e copos\" loading=\"lazy\" width=\"1100\" height=\"467\"><div class=\"lh-cats__tx\"><small>Mesa posta</small><b>Jarras e copos</b><em>Ver <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 18l6-6M13 6l6 6\"/></svg></em></div></a></div>"
     },
     {
       "type": "collection-shelf",
@@ -91,13 +80,13 @@
           "img": "/img/uploads/aumente-o-som-banner-site.webp",
           "mobile_img": "/img/uploads/aumente-o-som-banner-site-mobile.webp",
           "link": "/audio-portatil-e-acessorios",
-          "alt": "15% off em áudio e vídeo: caixas de som e microfones"
+          "alt": "Caixas de som bluetooth portáteis"
         },
         {
           "img": "/img/uploads/transforme-seu-banho-banner-site.webp",
           "mobile_img": "/img/uploads/transforme-seu-banho-banner-site-mobile.webp",
           "link": "/resistencia-chuveiro",
-          "alt": "Resistências para chuveiro: transforme seu banho"
+          "alt": "Resistências de chuveiro 127V e 220V"
         }
       ]
     },
@@ -107,25 +96,26 @@
       "limit": 12,
       "page": 1,
       "sort": "offers",
-      "title": "Ofertas"
+      "title": "Ofertas",
+      "link": "/ofertas"
     },
     {
       "type": "banners-grid",
       "banners": [
         {
           "img": "/img/uploads/bandejas.webp",
-          "link": "/travessas-e-assadeiras",
-          "alt": "Confira as bandejas"
+          "link": "/bandejas",
+          "alt": "Bandejas para servir"
         },
         {
           "img": "/img/uploads/porta-mantimentos.webp",
-          "link": "/potes-para-alimentos",
-          "alt": "Novos porta-mantimentos"
+          "link": "/potes-hermeticos",
+          "alt": "Potes para guardar alimentos"
         },
         {
           "img": "/img/uploads/talheres.webp",
           "link": "/talheres",
-          "alt": "Novos talheres"
+          "alt": "Talheres inox"
         }
       ]
     },
@@ -154,8 +144,8 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "limit": 12,
-      "page": 1,
+      "limit": 8,
+      "page": 2,
       "collection_id": "649de87d5e606903704dde74:categories:Casa e Construção:/casa-e-construcao",
       "title": "Mais Vendidos em Casa e Construção"
     }

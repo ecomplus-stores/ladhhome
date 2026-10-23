@@ -1,0 +1,189 @@
+<div
+  class="product-card lh-card"
+  :class="{
+    'product-card--inactive': body._id && !isActive,
+    'product-card--small': isSmall
+  }"
+  @mouseover="isHovered = true"
+  :data-product-id="body._id"
+  :data-sku="body.sku"
+>
+  <transition :enter-active-class="transitionClass">
+    <section v-if="!isLoading">
+      <slot name="stamps">
+        <div v-if="validStamps.length" class="product-card__stamps">
+          <span
+            v-for="(stamp, i) in validStamps"
+            :key="`s-${i}`"
+            :class="'product-card__stamps-' +
+              + `${(stamp.id || '').toLowerCase().replace(/\s/g, '-')}`"
+          >
+            <img :src="stamp.img" :alt="stamp.id">
+          </span>
+        </div>
+      </slot>
+
+      <slot name="body">
+        <a-link
+          class="product-card__link"
+          :href="`/${body.slug}`"
+          :title="name"
+        >
+          <slot name="header"/>
+
+          <div class="product-card__pictures">
+            <template v-if="body.pictures && body.pictures.length">
+              <a-picture
+                class="product-card__picture"
+                v-for="(picture, index) in body.pictures.slice(0, 2).reverse()"
+                v-if="body.pictures.length === 1 || index === 1 || isHovered"
+                :key="index"
+                :src="picture"
+                :can-calc-height="false"
+              />
+            </template>
+            <a-picture
+              v-else
+              class="product-card__picture"
+            />
+          </div>
+
+          <div class="lh-card__tags">
+            <slot name="discount-tag" v-bind="{ discount }">
+              <span v-if="isActive && discount > 0" class="lh-card__off">
+                {{ discount }}% OFF
+              </span>
+            </slot>
+            <span v-if="isActive && isInStock" class="lh-card__today">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"/><path d="M3 9l4 0"/></svg>
+              {{ lhDeliveryLabel }}
+            </span>
+          </div>
+
+          <slot name="title">
+            <component
+              :is="headingTag"
+              class="product-card__name"
+            >
+              {{ name }}
+            </component>
+          </slot>
+        </a-link>
+      </slot>
+
+      <slot name="rating">
+        <div
+          v-once
+          class="product-card__rating"
+          :data-sku="body.sku"
+          v-html="ratingHtml"
+        ></div>
+      </slot>
+
+      <slot
+        name="unavailable"
+        v-if="!body.available || !body.visible"
+      >
+        <p class="badge badge-warning mt-auto">
+          {{ i19unavailable }}
+        </p>
+      </slot>
+
+      <slot
+        name="out-of-stock"
+        v-else-if="!isInStock"
+      >
+        <p class="badge badge-dark mt-auto">
+          {{ i19outOfStock }}
+        </p>
+      </slot>
+
+      <slot
+        name="without-price"
+        v-else-if="isWithoutPrice"
+      >
+        <p class="badge badge-info mt-auto">
+          {{ i19uponRequest }}
+        </p>
+      </slot>
+
+      <template v-else>
+        <slot name="prices">
+          <lh-card-prices
+            class="product-card__prices"
+            :product="body"
+            :installments-option="installmentsOption"
+            :discount-option="discountOption"
+          />
+        </slot>
+
+        <div
+          @click="buy"
+          class="product-card__buy lh-card__buy"
+        >
+          <slot name="buy">
+            <div
+              v-if="buyHtml"
+              v-html="buyHtml"
+            ></div>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              :class="isSmall ? 'btn-sm': 'btn-block'"
+              :disabled="isWaitingBuy"
+            >
+              <span
+                v-if="isWaitingBuy"
+                class="product-card__buy-loading spinner-grow spinner-grow-sm"
+                role="status"
+              >
+                <span class="sr-only">Loading...</span>
+              </span>
+
+              <slot name="buy-button-content">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M5.001 8h13.999a2 2 0 0 1 1.977 2.304l-1.255 7.152a3 3 0 0 1 -2.966 2.544h-9.512a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304z"/><path d="M17 10l-2 -6"/><path d="M7 10l2 -6"/></svg>
+                {{ strBuy }}
+              </slot>
+            </button>
+          </slot>
+        </div>
+      </template>
+
+      <slot name="favorite">
+        <a
+          class="btn product-card__favorite fade"
+          @click="toggleFavorite"
+          :href="isLogged ? null : accountUrl"
+          :aria-label="i19addToFavorites"
+        >
+          <i
+            class="i-heart mr-1"
+            :class="isFavorite ? 'active' : null"
+          >
+          </i>
+        </a>
+      </slot>
+
+      <slot name="footer">
+        <div
+          v-if="footerHtml"
+          v-html="footerHtml"
+        ></div>
+      </slot>
+    </section>
+  </transition>
+
+  <template v-if="isLoading">
+    <slot/>
+    <div
+      v-if="error"
+      class="alert alert-warning small"
+      role="alert"
+    >
+      {{ error }}
+    </div>
+  </template>
+
+  <div ref="quickview"></div>
+</div>
