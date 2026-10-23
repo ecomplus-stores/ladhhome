@@ -77,14 +77,14 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/aumente-o-som-banner-site.png",
-          "mobile_img": "/img/uploads/aumente-o-som-banner-site-mobile.png",
+          "img": "/img/uploads/aumente-o-som-banner-site.webp",
+          "mobile_img": "/img/uploads/aumente-o-som-banner-site-mobile.webp",
           "link": "/audio-portatil-e-acessorios",
           "alt": "Caixas de som bluetooth portáteis"
         },
         {
-          "img": "/img/uploads/transforme-seu-banho-banner-site.png",
-          "mobile_img": "/img/uploads/transforme-seu-banho-banner-site-mobile.png",
+          "img": "/img/uploads/transforme-seu-banho-banner-site.webp",
+          "mobile_img": "/img/uploads/transforme-seu-banho-banner-site-mobile.webp",
           "link": "/resistencia-chuveiro",
           "alt": "Resistências de chuveiro 127V e 220V"
         }
@@ -103,17 +103,17 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/bandejas.png",
+          "img": "/img/uploads/bandejas.webp",
           "link": "/bandejas",
           "alt": "Bandejas para servir"
         },
         {
-          "img": "/img/uploads/porta-mantimentos.png",
+          "img": "/img/uploads/porta-mantimentos.webp",
           "link": "/potes-hermeticos",
           "alt": "Potes para guardar alimentos"
         },
         {
-          "img": "/img/uploads/talheres.png",
+          "img": "/img/uploads/talheres.webp",
           "link": "/talheres",
           "alt": "Talheres inox"
         }
@@ -138,7 +138,8 @@
     },
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/banner-desconto-topo-novo.gif"
+      "img": "/img/uploads/banner-desconto-topo-novo.gif",
+      "alt": "10% de desconto para novos clientes com o cupom PRIMEIRA10"
     },
     {
       "type": "collection-shelf",
