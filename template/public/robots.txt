@@ -6,3 +6,5 @@ Disallow: /search?
 Disallow: /search.html$
 Disallow: /search.html?
 Disallow: /admin/
+
+Sitemap: https://www.ladhhome.com.br/sitemap.xml
