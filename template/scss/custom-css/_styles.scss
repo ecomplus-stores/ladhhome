@@ -2844,3 +2844,100 @@ body .lhx-cafe .mx-life .tx{padding:26px 20px}
 body .lhx-cafe .mx-stage img,body .lhx-cafe .mx-ring,body .lhx-cafe .spin g,body .lhx-cafe .mx-foam,body .lhx-cafe .mx-steam{animation:none}
 body .lhx-cafe .mx-foam,body .lhx-cafe .mx-steam{display:none}
 }
+
+// ---------------------------------------------------------------------------
+// Tema genérico da descrição landing (.lhx.lhx-p): a paleta vem no style do <article>
+// (--bg, --bg2, --ac, --dk). Usado nos produtos novos de 30/10/2026.
+// ---------------------------------------------------------------------------
+
+body .lhx-p{--bg:#f5f5f7;--bg2:#e5e7eb;--ac:#c40000;--dk:#111827;--tx:#4b5563}
+body .lhx-p .kick{color:var(--ac)}
+body .lhx-p .lp-hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;min-height:500px;background:radial-gradient(circle at 76% 45%,#fff 0,var(--bg) 48%,var(--bg2) 100%)}
+body .lhx-p .lp-hero .tx{position:relative;z-index:1;padding:48px}
+body .lhx-p .lp-hero h2{font-size:44px;color:var(--dk)}
+body .lhx-p .lp-hero p{font-size:18px;color:var(--tx)}
+body .lhx-p .chips span{background:#fff;border:1px solid rgba(0,0,0,.08);color:var(--dk);backdrop-filter:none}
+body .lhx-p .lp-buy{display:inline-flex;margin-top:22px;background:var(--dk);color:#fff;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:999px;box-shadow:0 12px 28px rgba(0,0,0,.2);transition:transform .25s ease,box-shadow .25s ease}
+body .lhx-p .lp-buy:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.28)}
+body .lhx-p .lp-stage{position:relative;min-height:420px;height:100%;display:flex;align-items:center;justify-content:center}
+body .lhx-p .lp-stage img{position:relative;z-index:1;width:84%;max-width:420px;max-height:400px;object-fit:contain;border-radius:18px;mix-blend-mode:multiply;animation:lp-float 6s ease-in-out infinite}
+body .lhx-p .lp-ring{position:absolute;width:340px;height:340px;border-radius:50%;border:2px dashed var(--ac);opacity:.28;animation:lp-spin 28s linear infinite}
+body .lhx-p .lp-ring.r2{width:250px;height:250px;border:1px solid var(--ac);opacity:.2;animation-direction:reverse;animation-duration:18s}
+body .lhx-p .lp-fx{position:absolute;inset:10% 12% 12%;z-index:2;pointer-events:none}
+body .lhx-p .lp-fx i{position:absolute;bottom:0;width:10px;height:10px;border-radius:50%;background:var(--ac);opacity:0;animation:lp-rise 5.5s ease-in infinite}
+body .lhx-p .lp-fx i:nth-child(1){left:4%;width:12px;height:12px}
+body .lhx-p .lp-fx i:nth-child(2){left:20%;width:7px;height:7px;animation-delay:.8s}
+body .lhx-p .lp-fx i:nth-child(3){left:38%;width:14px;height:14px;animation-delay:1.6s}
+body .lhx-p .lp-fx i:nth-child(4){left:58%;width:6px;height:6px;animation-delay:2.4s}
+body .lhx-p .lp-fx i:nth-child(5){left:74%;width:10px;height:10px;animation-delay:3.2s}
+body .lhx-p .lp-fx i:nth-child(6){left:90%;width:8px;height:8px;animation-delay:4s}
+body .lhx-p .lp-fx.bub i{background:radial-gradient(circle at 35% 30%,#fff,rgba(255,255,255,.4) 60%,var(--bg2));box-shadow:inset 0 0 0 1px var(--ac)}
+body .lhx-p .lp-fx.spark i{border-radius:2px;width:4px;height:12px;background:linear-gradient(0deg,var(--ac),#fde68a);animation-name:lp-spark;animation-duration:2.6s}
+@keyframes lp-float{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-14px) rotate(1.5deg)}}
+@keyframes lp-spin{to{transform:rotate(360deg)}}
+@keyframes lp-rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.6}100%{transform:translateY(-240px) scale(1.1);opacity:0}}
+@keyframes lp-spark{0%{transform:translateY(0) rotate(0);opacity:0}20%{opacity:.9}100%{transform:translateY(-160px) rotate(40deg);opacity:0}}
+body .lhx-p .nums{background:linear-gradient(120deg,var(--dk),color-mix(in srgb,var(--dk) 72%,var(--ac)))}
+body .lhx-p .nums b{background:linear-gradient(180deg,#fff,color-mix(in srgb,#fff 45%,var(--ac)));-webkit-background-clip:text;background-clip:text;color:transparent}
+body .lhx-p .nums small{color:rgba(255,255,255,.72)}
+body .lhx-p .lp-feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:22px}
+body .lhx-p .lp-feats div{padding:22px;border-radius:18px;background:linear-gradient(140deg,#fff,var(--bg));border:1px solid rgba(0,0,0,.06);opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease,box-shadow .35s ease}
+body .lhx-p .rv-wait .lp-feats div{opacity:0;transform:translateY(18px)}
+body .lhx-p .rv-wait.on .lp-feats div{opacity:1;transform:none}
+body .lhx-p .lp-feats div:nth-child(2){transition-delay:.08s}
+body .lhx-p .lp-feats div:nth-child(3){transition-delay:.16s}
+body .lhx-p .lp-feats div:nth-child(4){transition-delay:.24s}
+body .lhx-p .lp-feats div:nth-child(5){transition-delay:.32s}
+body .lhx-p .lp-feats div:nth-child(6){transition-delay:.4s}
+body .lhx-p .lp-feats div:hover{box-shadow:0 18px 40px rgba(0,0,0,.08)}
+body .lhx-p .lp-feats em{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;background:var(--bg2);font-style:normal;font-size:22px;margin-bottom:12px}
+body .lhx-p .lp-feats b{display:block;font-size:17.5px;color:var(--dk);margin-bottom:4px}
+body .lhx-p .lp-feats span{font-size:15px;color:var(--tx)}
+body .lhx-p .lp-life{position:relative;min-height:460px;display:flex;align-items:flex-end;color:#fff}
+body .lhx-p .lp-life img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,center);transform:scale(1.08);transition:transform 1.6s ease}
+body .lhx-p .lp-life.on img,body .lhx-p .lp-life:not(.rv-wait) img{transform:scale(1)}
+body .lhx-p .lp-life::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,color-mix(in srgb,var(--dk) 92%,transparent),transparent 68%)}
+body .lhx-p .lp-life .tx{position:relative;z-index:1;padding:40px 44px}
+body .lhx-p .lp-life h2{color:#fff}
+body .lhx-p .lp-life p{color:rgba(255,255,255,.86);max-width:640px}
+body .lhx-p .lp-life .kick{color:color-mix(in srgb,#fff 40%,var(--ac))}
+body .lhx-p .lp-uses{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+body .lhx-p .lp-uses span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.26);backdrop-filter:blur(6px);padding:8px 15px;border-radius:999px;font-size:15px;font-weight:500;transition:opacity .5s ease,transform .5s ease}
+body .lhx-p .lp-life.rv-wait .lp-uses span{opacity:0;transform:translateY(10px)}
+body .lhx-p .lp-life.rv-wait.on .lp-uses span{opacity:1;transform:none}
+body .lhx-p .lp-uses span:nth-child(2){transition-delay:.1s}
+body .lhx-p .lp-uses span:nth-child(3){transition-delay:.2s}
+body .lhx-p .lp-uses span:nth-child(4){transition-delay:.3s}
+body .lhx-p .lp-uses span:nth-child(5){transition-delay:.4s}
+body .lhx-p .lp-uses span:nth-child(6){transition-delay:.5s}
+body .lhx-p .lp-steps{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+body .lhx-p .lp-steps::before{content:"";position:absolute;top:22px;left:8%;right:8%;height:2px;background:var(--ac);opacity:.5;transform-origin:left;transition:transform 1.4s ease .2s}
+body .lhx-p .rv-wait .lp-steps::before{transform:scaleX(0)}
+body .lhx-p .rv-wait.on .lp-steps::before{transform:scaleX(1)}
+body .lhx-p .lp-steps li{position:relative;text-align:center;padding:0 8px}
+body .lhx-p .lp-steps em{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--dk);color:#fff;font-style:normal;font-weight:700;font-size:18px;box-shadow:0 0 0 6px #fff;margin-bottom:12px;position:relative}
+body .lhx-p .lp-steps b{display:block;font-size:18px;color:var(--dk)}
+body .lhx-p .lp-steps span{font-size:15px;color:var(--tx)}
+body .lhx-p .lp-box{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;background:linear-gradient(120deg,#fff,var(--bg))}
+body .lhx-p .lp-box img{width:100%;max-height:440px;object-fit:contain;display:block;mix-blend-mode:multiply}
+body .lhx-p .lp-box img.cover{object-fit:cover;height:100%;max-height:none;min-height:340px;mix-blend-mode:normal}
+body .lhx-p .faq summary::after{color:var(--ac)}
+body .lhx-p .cta{background:radial-gradient(circle at 50% 0,color-mix(in srgb,var(--dk) 70%,var(--ac)),var(--dk) 70%)}
+body .lhx-p .cta p{color:rgba(255,255,255,.78)}
+body .lhx-p .cta small{color:rgba(255,255,255,.6)}
+@media (max-width:820px){
+body .lhx-p .lp-hero{grid-template-columns:1fr;min-height:0}
+body .lhx-p .lp-hero .tx{padding:28px 20px 0}
+body .lhx-p .lp-hero h2{font-size:31px}
+body .lhx-p .lp-stage{min-height:320px}
+body .lhx-p .lp-stage img{max-height:300px}
+body .lhx-p .lp-ring{width:260px;height:260px}
+body .lhx-p .lp-ring.r2{width:190px;height:190px}
+body .lhx-p .lp-steps,body .lhx-p .lp-box{grid-template-columns:1fr}
+body .lhx-p .lp-steps::before{display:none}
+body .lhx-p .lp-life .tx{padding:26px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+body .lhx-p .lp-stage img,body .lhx-p .lp-ring{animation:none}
+body .lhx-p .lp-fx{display:none}
+}
