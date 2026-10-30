@@ -2100,6 +2100,19 @@ body .banner-slider {
   }
 }
 
+// sem a proporção da imagem (o tema não lê o tamanho de GIF, como a faixa da página de produto)
+// a altura vem da própria imagem, sem herdar a proporção do slide da home
+body .banner-slider:not([style*="--banner-aspect-ratio"]) {
+  aspect-ratio: auto;
+
+  // o tema reserva até 18rem de altura mínima para o slide; a faixa fica só com a altura da imagem
+  .banner-slider__slides,
+  .banner-slider__slides > li,
+  .banner {
+    min-height: 0;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Topo compacto ao rolar: o menu de departamentos (e a faixa de CEP no celular)
 // recolhe e fica só a barra principal (.lh-top). Classe colocada em custom-js/pages.js.
