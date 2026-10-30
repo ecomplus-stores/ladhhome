@@ -2750,3 +2750,97 @@ body .html-clearfix:has(.lhx) {
 body .lhx {
   overflow-x: clip;
 }
+
+// ---------------------------------------------------------------------------
+// Tema café da descrição landing (.lhx.lhx-cafe), usada no Mixer de Bebidas 2 em 1:
+// cores creme/espresso, espuma subindo, vapor, hastes girando e passos com linha animada
+// ---------------------------------------------------------------------------
+
+body .lhx-cafe{--mx-cream:#f6efe6;--mx-latte:#e9dccb;--mx-caramel:#b9793f;--mx-espresso:#2a1a12}
+body .lhx-cafe .kick{color:var(--mx-caramel)}
+body .lhx-cafe .mx-hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;min-height:520px;background:radial-gradient(circle at 78% 45%,#fff 0,var(--mx-cream) 46%,var(--mx-latte) 100%)}
+body .lhx-cafe .mx-hero .tx{position:relative;z-index:1;padding:48px}
+body .lhx-cafe .mx-hero h2{font-size:46px;color:var(--mx-espresso)}
+body .lhx-cafe .mx-hero p{font-size:18px;color:#5b4636}
+body .lhx-cafe .chips span{background:#fff;border:1px solid #eadfce;color:var(--mx-espresso);backdrop-filter:none}
+body .lhx-cafe .mx-buy{display:inline-flex;margin-top:22px;background:var(--mx-espresso);color:#fff;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:999px;box-shadow:0 12px 28px rgba(42,26,18,.25);transition:transform .25s ease,box-shadow .25s ease}
+body .lhx-cafe .mx-buy:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(42,26,18,.32)}
+body .lhx-cafe .mx-stage{position:relative;height:100%;min-height:420px;display:flex;align-items:center;justify-content:center}
+body .lhx-cafe .mx-stage img{position:relative;z-index:1;width:88%;max-width:430px;mix-blend-mode:multiply;animation:mx-float 6s ease-in-out infinite}
+body .lhx-cafe .mx-ring{position:absolute;width:340px;height:340px;border-radius:50%;border:2px dashed rgba(185,121,63,.35);animation:mx-spin 26s linear infinite}
+body .lhx-cafe .mx-ring.r2{width:250px;height:250px;border:1px solid rgba(185,121,63,.25);animation-direction:reverse;animation-duration:18s}
+body .lhx-cafe .mx-foam{position:absolute;left:12%;bottom:14%;width:46%;height:60%;z-index:2;pointer-events:none}
+body .lhx-cafe .mx-foam i{position:absolute;bottom:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,rgba(255,255,255,.55) 60%,rgba(233,220,203,.4));box-shadow:inset 0 0 0 1px rgba(185,121,63,.18);opacity:0;animation:mx-bubble 5s ease-in infinite}
+body .lhx-cafe .mx-foam i:nth-child(1){left:6%;width:14px;height:14px}
+body .lhx-cafe .mx-foam i:nth-child(2){left:22%;width:9px;height:9px;animation-delay:.7s}
+body .lhx-cafe .mx-foam i:nth-child(3){left:38%;width:18px;height:18px;animation-delay:1.4s}
+body .lhx-cafe .mx-foam i:nth-child(4){left:52%;width:8px;height:8px;animation-delay:2.1s}
+body .lhx-cafe .mx-foam i:nth-child(5){left:66%;width:12px;height:12px;animation-delay:2.8s}
+body .lhx-cafe .mx-foam i:nth-child(6){left:80%;width:16px;height:16px;animation-delay:3.5s}
+body .lhx-cafe .mx-foam i:nth-child(7){left:30%;width:6px;height:6px;animation-delay:4.1s}
+body .lhx-cafe .mx-foam i:nth-child(8){left:72%;width:7px;height:7px;animation-delay:1s}
+body .lhx-cafe .mx-steam{position:absolute;right:16%;top:10%;width:80px;height:120px;z-index:2;pointer-events:none}
+body .lhx-cafe .mx-steam i{position:absolute;bottom:0;width:10px;height:70px;border-radius:50%;background:linear-gradient(0deg,rgba(185,121,63,0),rgba(185,121,63,.28),rgba(185,121,63,0));filter:blur(4px);opacity:0;animation:mx-steam 4s ease-out infinite}
+body .lhx-cafe .mx-steam i:nth-child(1){left:10px}
+body .lhx-cafe .mx-steam i:nth-child(2){left:34px;animation-delay:1.3s}
+body .lhx-cafe .mx-steam i:nth-child(3){left:58px;animation-delay:2.6s}
+@keyframes mx-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+@keyframes mx-spin{to{transform:rotate(360deg)}}
+@keyframes mx-bubble{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.95}100%{transform:translateY(-220px) scale(1.15);opacity:0}}
+@keyframes mx-steam{0%{transform:translateY(10px) scaleX(1);opacity:0}30%{opacity:1}100%{transform:translateY(-70px) scaleX(2.2) skewX(14deg);opacity:0}}
+body .lhx-cafe .nums{background:linear-gradient(120deg,#20140e,#3b2519)}
+body .lhx-cafe .nums b{background:linear-gradient(180deg,#fff,#e2b98a);-webkit-background-clip:text;background-clip:text;color:transparent}
+body .lhx-cafe .nums small{color:#c9b6a3}
+body .lhx-cafe .mx-heads{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+body .lhx-cafe .mx-head{display:flex;gap:18px;align-items:center;padding:22px;border-radius:18px;background:linear-gradient(135deg,#fffaf4,var(--mx-cream));border:1px solid #efe4d5;transition:transform .35s ease,box-shadow .35s ease}
+body .lhx-cafe .mx-head:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(42,26,18,.1)}
+body .lhx-cafe .mx-head svg{flex:none;width:104px;height:104px}
+body .lhx-cafe .mx-head b{display:block;font-size:19px;color:var(--mx-espresso);margin-bottom:4px}
+body .lhx-cafe .mx-head span{font-size:15px;color:#5b4636}
+body .lhx-cafe .spin g{transform-origin:60px 60px;animation:mx-spin 2.4s linear infinite}
+body .lhx-cafe .spin.s2 g{animation:mx-whisk 1.6s ease-in-out infinite}
+@keyframes mx-whisk{0%,100%{transform:scaleX(1)}50%{transform:scaleX(-1)}}
+body .lhx-cafe .mx-life{position:relative;min-height:460px;display:flex;align-items:flex-end;color:#fff}
+body .lhx-cafe .mx-life img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;transform:scale(1.08);transition:transform 1.6s ease}
+body .lhx-cafe .mx-life.on img,body .lhx-cafe .mx-life:not(.rv-wait) img{transform:scale(1)}
+body .lhx-cafe .mx-life::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(32,20,14,.88),rgba(32,20,14,.1) 65%)}
+body .lhx-cafe .mx-life .tx{position:relative;z-index:1;padding:40px 44px}
+body .lhx-cafe .mx-life h2{color:#fff}
+body .lhx-cafe .mx-life .kick{color:#e2b98a}
+body .lhx-cafe .mx-uses{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+body .lhx-cafe .mx-uses span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(6px);padding:8px 15px;border-radius:999px;font-size:15px;font-weight:500;opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+body .lhx-cafe .mx-life.on .mx-uses span,body .lhx-cafe .mx-life:not(.rv-wait) .mx-uses span{opacity:1;transform:none}
+body .lhx-cafe .mx-uses span:nth-child(2){transition-delay:.1s}
+body .lhx-cafe .mx-uses span:nth-child(3){transition-delay:.2s}
+body .lhx-cafe .mx-uses span:nth-child(4){transition-delay:.3s}
+body .lhx-cafe .mx-uses span:nth-child(5){transition-delay:.4s}
+body .lhx-cafe .mx-uses span:nth-child(6){transition-delay:.5s}
+body .lhx-cafe .mx-steps{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+body .lhx-cafe .mx-steps::before{content:"";position:absolute;top:22px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--mx-caramel),#e2b98a);transform-origin:left;transform:scaleX(1);transition:transform 1.4s ease .2s}
+body .lhx-cafe .rv-wait .mx-steps::before{transform:scaleX(0)}
+body .lhx-cafe .rv-wait.on .mx-steps::before{transform:scaleX(1)}
+body .lhx-cafe .mx-steps li{position:relative;text-align:center;padding:0 8px}
+body .lhx-cafe .mx-steps em{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--mx-espresso);color:#fff;font-style:normal;font-weight:700;font-size:18px;box-shadow:0 0 0 6px #fff;margin-bottom:12px;position:relative}
+body .lhx-cafe .mx-steps b{display:block;font-size:18px;color:var(--mx-espresso)}
+body .lhx-cafe .mx-steps span{font-size:15px;color:#5b4636}
+body .lhx-cafe .mx-go{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;background:linear-gradient(120deg,#fffaf4,var(--mx-cream))}
+body .lhx-cafe .mx-go img{width:100%;max-height:440px;object-fit:contain;display:block;mix-blend-mode:multiply}
+body .lhx-cafe .faq summary::after{color:var(--mx-caramel)}
+body .lhx-cafe .cta{background:radial-gradient(circle at 50% 0,#4a2e1f,#1c110b 70%)}
+body .lhx-cafe .cta p{color:#d8c6b3}
+body .lhx-cafe .cta small{color:#a8927d}
+@media (max-width:820px){
+body .lhx-cafe .mx-hero{grid-template-columns:1fr;min-height:0}
+body .lhx-cafe .mx-hero .tx{padding:28px 20px 0}
+body .lhx-cafe .mx-hero h2{font-size:32px}
+body .lhx-cafe .mx-stage{min-height:320px}
+body .lhx-cafe .mx-ring{width:260px;height:260px}
+body .lhx-cafe .mx-ring.r2{width:190px;height:190px}
+body .lhx-cafe .mx-heads,body .lhx-cafe .mx-steps,body .lhx-cafe .mx-go{grid-template-columns:1fr}
+body .lhx-cafe .mx-steps::before{display:none}
+body .lhx-cafe .mx-life .tx{padding:26px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+body .lhx-cafe .mx-stage img,body .lhx-cafe .mx-ring,body .lhx-cafe .spin g,body .lhx-cafe .mx-foam,body .lhx-cafe .mx-steam{animation:none}
+body .lhx-cafe .mx-foam,body .lhx-cafe .mx-steam{display:none}
+}
