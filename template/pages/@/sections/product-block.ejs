@@ -227,6 +227,15 @@ const productJsonLd = {
     seller: {
       '@type': 'Organization',
       name: _.settings.name || _.store.name
+    },
+    // matches /pages/trocas: 7 days to return, free return shipping
+    hasMerchantReturnPolicy: {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'BR',
+      returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+      merchantReturnDays: 7,
+      returnMethod: 'https://schema.org/ReturnByMail',
+      returnFees: 'https://schema.org/FreeReturn'
     }
   }
 }
@@ -237,8 +246,14 @@ if (_.state.brands && _.state.brands[0] && _.state.brands[0].name) {
   }
 }
 if (_.state.pictures && _.state.pictures.length) {
-  productJsonLd.image = _.ecomUtils.img(_.state, null, 'zoom').url
-    .replace(/(\w+\.)?(ecoms\d)\.com/i, '$2-nyc3.nyc3.cdn.digitaloceanspaces.com')
+  // every product picture, so search engines can show the whole gallery
+  const images = _.state.pictures
+    .map(picture => (picture.zoom || picture.big || picture.normal || {}).url)
+    .filter(Boolean)
+    .map(url => url.replace(/(\w+\.)?(ecoms\d)\.com/i, '$2-nyc3.nyc3.cdn.digitaloceanspaces.com'))
+  if (images.length) {
+    productJsonLd.image = images
+  }
 }
 if (_.state.mpn && _.state.mpn[0]) {
   productJsonLd.mpn = _.state.mpn[0]
