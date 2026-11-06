@@ -398,18 +398,6 @@
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/ladh_home</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://ladhhome.com.br/mes-arraia</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://ladhhome.com.br/escorredor-macarro-massas-verduras-legumes-ao-inox-grande</loc>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
@@ -1892,7 +1880,37 @@
     </url>
   
     <url>
+      <loc>https://ladhhome.com.br/tapete-de-pedra-para-banheiro-60x39cm-absorvente-seca-rapido</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
+      <loc>https://ladhhome.com.br/manteigueira-retangular-porcelana-tampa-bambu-hermetica-faca</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+  
+    <url>
+      <loc>https://ladhhome.com.br/mes-arraia</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://ladhhome.com.br/ladh_home</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://ladhhome.com.br/pages/arrependimento-de-compra</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>https://ladhhome.com.br/pages/contato</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1904,13 +1922,13 @@
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/pages/faq</loc>
+      <loc>https://ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/pages/entregas-no-mesmo-dia</loc>
+      <loc>https://ladhhome.com.br/pages/faq</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1928,25 +1946,19 @@
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/pages/primeira-compra</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://ladhhome.com.br/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/pages/contato</loc>
+      <loc>https://ladhhome.com.br/pages/sobre-nos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/pages/sobre-nos</loc>
+      <loc>https://ladhhome.com.br/pages/primeira-compra</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -1976,15 +1988,15 @@
     </url>
   
     <url>
-      <loc>https://ladhhome.com.br/</loc>
-      <changefreq>daily</changefreq>
-      <priority>1</priority>
-    </url>
-  
-    <url>
       <loc>https://ladhhome.com.br/blog</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://ladhhome.com.br/</loc>
+      <changefreq>daily</changefreq>
+      <priority>1</priority>
     </url>
   
     <url>
