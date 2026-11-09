@@ -34,7 +34,14 @@ if (Array.isArray(widgets)) {
 }
 
 // page title and description
-const title = _.state.meta_title || _.state.name || _.state.title || _.settings.name
+let title = _.state.meta_title
+if (!title) {
+  title = _.state.name || _.state.title || _.settings.name
+  // brand suffix on products and listings while it still fits the ~60 chars search results show
+  if (resource && _.state.name && title.length <= 48) {
+    title += ' | Ladh Home'
+  }
+}
 // unique fallback description for products and listings instead of the store-wide one
 let autoDescription
 if (resource && _.state.name) {
@@ -185,16 +192,22 @@ if (pathname) {
   <meta property="og:url" content="<%= url %>">
   <meta property="og:title" content="<%= title %>">
   <meta property="og:description" content="<%= description %>">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="<%= resource === 'products' ? 'product' : 'website' %>">
   <meta property="og:locale" content="<%= ogLocale %>">
   <% if (ogImage) { %>
     <meta property="og:image" content="<%= ogImage %>">
+    <meta property="og:image:alt" content="<%= title %>">
+  <% } %>
+  <% if (resource === 'products' && _.state.name) { %>
+    <meta property="product:price:amount" content="<%= _.ecomUtils.price(_.state) %>">
+    <meta property="product:price:currency" content="<%= _.settings.currency %>">
+    <meta property="product:availability" content="<%= _.ecomUtils.inStock(_.state) ? 'in stock' : 'out of stock' %>">
   <% } %>
   <% if (social.fb_app_id) { %>
     <meta property="fb:app_id" content="<%= social.fb_app_id %>">
   <% } %>
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="<%= ogImage ? 'summary_large_image' : 'summary' %>">
   <% if (social.twitter_username) { %>
     <meta name="twitter:site" content="<%= social.twitter_username %>">
   <% } %>
